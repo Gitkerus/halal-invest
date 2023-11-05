@@ -1,0 +1,49 @@
+.contacts {
+    &TextWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &ContentWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__map {
+        width: 100%;
+        aspect-ratio: 1.6 / 1;
+    }
+    &__block {
+        &__text {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+        }
+        &__title {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+@media (min-width: 1056px) {
+    .contacts {
+        &ContentWrapper {
+            flex-direction: row;
+            gap: 32px;
+            justify-content: space-between;
+        }
+        &TextWrapper {
+            width: 350px;
+        }
+        &__map {
+            width: calc(100% - 382px);
+            object-fit: cover;
+            aspect-ratio: 2/1;
+        }
+    }
+}

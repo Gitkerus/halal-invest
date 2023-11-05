@@ -1,0 +1,55 @@
+.ourProgress {
+    &__number {
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        color: #027a48;
+    }
+    &__text {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        color: #027a48;
+    }
+    &__title {
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 1056px) {
+    .ourProgress {
+        &Block {
+            width: 33%;
+        }
+        &Content {
+            display: flex;
+            justify-content: space-between;
+        }
+        &Top {
+            padding-bottom: 80px;
+            border-bottom: 1px solid #161616;
+            margin-bottom: 80px;
+        }
+        &__number {
+            font-size: 54px;
+        }
+        &__title {
+            width: 380px;
+        }
+    }
+}
+
+@media (min-width: 1568px) {
+    .ourProgress {
+        &__title {
+            width: 550px;
+            margin-bottom: 60px;
+        }
+        &__number {
+            font-size: 76px;
+            line-height: 86px;
+        }
+    }
+}

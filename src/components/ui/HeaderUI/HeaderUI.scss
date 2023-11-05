@@ -1,0 +1,183 @@
+.header {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 100%;
+    height: 100%;
+    &Wrapper {
+        height: 48px;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 8000;
+        border: 0;
+        border-bottom: 1px solid #e0e0e0;
+        background-color: #fff;
+    }
+    &Burger {
+        &Btn {
+            height: 47px;
+            width: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            padding: 0;
+            background: #fff;
+            z-index: 9000;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        &Menu {
+            position: fixed;
+            left: -1000px;
+            top: 48px;
+            width: 100%;
+            height: calc(100% - 48px);
+            overflow-y: auto;
+            background: #fff;
+            z-index: 9000;
+            &-open {
+                left: 0%;
+            }
+            &Block {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        &SubMenu {
+            display: none;
+            position: fixed;
+            top: 48px;
+            left: 0;
+            z-index: 9000;
+            background: #fff;
+            width: 100%;
+            height: calc(100% - 48px);
+            overflow-y: auto;
+            &-open {
+                display: block;
+            }
+        }
+    }
+    &__burgerLink {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #525252;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.16px;
+        text-decoration: none;
+        padding: 10px 16px;
+        &:hover {
+            cursor: pointer;
+            background: var(--layer-layer-active-01, #c6c6c6);
+            color: #161616;
+        }
+        &-back {
+            color: #3a8348;
+            gap: 8px;
+            justify-content: start;
+        }
+        &-bold {
+            color: #161616;
+            font-weight: 600;
+            &:hover {
+                cursor: auto;
+                background: #fff;
+            }
+        }
+    }
+    &__calcBtn {
+        display: none;
+    }
+    &__name {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 0 32px;
+        height: 100%;
+        color: #027a48;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 18px; /* 128.571% */
+        letter-spacing: 0.16px;
+    }
+}
+
+@media (min-width: 1056px) {
+    .header {
+        &Burger {
+            &Menu {
+                width: 200px;
+                height: fit-content;
+            }
+            &SubMenu {
+                width: fit-content;
+                background: none;
+                height: 60%;
+                &-open {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+        &FadeScreen {
+            display: none;
+            &-open {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 8500;
+                color: rgba(0, 0, 0, 0.4);
+                background: rgba(0, 0, 0, 0.4);
+                height: 100vh;
+                width: 100vw;
+            }
+        }
+        &Global {
+            padding: 4px 32px 4px 0;
+        }
+        &__burgerLink {
+            padding: 16px 15px;
+            width: 200px;
+            background: #fff;
+            &__text {
+                width: 144px;
+            }
+        }
+        &__calcBtn {
+            display: block;
+            padding: 11px 16px;
+            height: 40px;
+            min-height: auto;
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    .header {
+        &Burger {
+            &Btn {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    .header {
+        max-width: 1856px;
+        margin: 0 auto;
+    }
+}

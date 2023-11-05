@@ -1,0 +1,78 @@
+.calcPrice {
+    padding: 60px 16px;
+    border: none;
+    background-color: #f4f4f4;
+    margin-bottom: 100px;
+    width: 100%;
+    position: initial;
+    &TopInput {
+        margin-bottom: 20px;
+    }
+    &__buttonBlock {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        &__button {
+            max-width: 100%;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            padding-right: 15px;
+        }
+        &__note {
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+    &__nameInput {
+        margin-bottom: 10px;
+    }
+    &__upload {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 1056px) {
+    .calcPrice {
+        width: 100vw;
+        padding: 80px 32px 80px calc(100vw - 100%);
+        &TopInput {
+            width: calc((100% - 32px) / 2);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        &__buttonBlock {
+            margin: 0;
+            gap: 30px;
+            flex-direction: row;
+            &__button {
+                width: calc((100% - 30px) / 2);
+            }
+        }
+        &Wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        &__textArea {
+            width: calc((100% - 32px) / 2);
+        }
+        &__nameInput {
+            margin: 0;
+        }
+        &__upload {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    .calcPrice {
+        width: 1856px;
+        padding: 80px 32px 80px calc(1856px - 100%);
+    }
+}

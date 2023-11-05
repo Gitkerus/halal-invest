@@ -1,0 +1,15 @@
+.ourTeam {
+    &Content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1056px) {
+    .ourTeam {
+        &Content {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}

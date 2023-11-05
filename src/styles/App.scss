@@ -1,0 +1,164 @@
+@use "@carbon/react";
+
+html {
+    scroll-behavior: smooth;
+}
+
+.content {
+    padding: 48px 0 100px;
+    &Block {
+        padding: 30px 16px;
+        width: 100%;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            border-top: 1px solid #161616;
+        }
+        &__title {
+            color: var(--gray-100, #161616);
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 40px;
+            margin-bottom: 30px;
+        }
+    }
+    &Collum {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+}
+
+@media (min-width: 1056px) {
+    .content {
+        &Block {
+            padding: 40px 0 60px;
+            padding-right: 32px;
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: calc(100% - 32px);
+                border-top: 1px solid #161616;
+            }
+            &__title {
+                font-size: 42px;
+                line-height: 50px;
+            }
+        }
+        &Collum {
+            width: 70%;
+        }
+        &Wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (min-width: 1584px) {
+    .content {
+        &Block {
+            padding: 80px 0;
+            padding-right: 32px;
+            &__title {
+                font-size: 60px;
+                line-height: 70px;
+                margin-bottom: 60px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    .content {
+        max-width: 1856px;
+        margin: 0 auto;
+    }
+}
+
+sup {
+    vertical-align: super;
+    font-size: 60%;
+}
+
+.vertLine {
+    width: 100%;
+    border-bottom: 1px solid #161616;
+    &-burger {
+        border-bottom: 1px solid #e0e0e0;
+    }
+    &-mobile {
+        margin: 30px 0;
+    }
+    &-grey {
+        border-bottom: 1px solid #6a6868;
+    }
+}
+
+@media (min-width: 1056px) {
+    .vertLine {
+        &-burger {
+            display: none;
+        }
+        &-subMenu {
+            width: 200px;
+        }
+        &-mobile {
+            display: none;
+        }
+    }
+}
+
+// carbon stylies fixes
+
+.cds--label {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.cds--text-area {
+    background-color: white;
+    padding: 16px;
+}
+
+.cds--file__drop-container {
+    max-width: 100%;
+}
+
+.cds--file--label {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.cds--btn--primary {
+    background-color: #027a48;
+    &:hover {
+        background-color: #285b32;
+    }
+    &:active {
+        background-color: #285b32;
+    }
+    &:focus {
+        border-color: #285b32;
+    }
+}
+
+.cds--btn--tertiary {
+    color: #027a48;
+    border-color: #027a48;
+    &:hover {
+        background-color: #027a48;
+    }
+    &:active {
+        background-color: #285b32;
+    }
+}

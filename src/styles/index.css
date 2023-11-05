@@ -1,0 +1,4 @@
+sup {vertical-align: super; }
+b {font-weight: bold !important;}
+ul li {list-style-type: disc !important; list-style-position: inside !important;}
+ol li {list-style-type: decimal !important; list-style-position: inside !important;}

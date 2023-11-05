@@ -1,0 +1,73 @@
+.price {
+    &TabWrapper {
+        overflow: hidden;
+        overflow-x: auto;
+        margin-bottom: 30px;
+    }
+    &__button {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        padding-right: 15px;
+    }
+    &__desc {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+    &__tab {
+        min-width: 735px;
+        &__header {
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+            color: var(--gray-100, #161616);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px;
+            margin-bottom: 10px;
+        }
+        &__row {
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+            padding: 20px 0;
+        }
+    }
+}
+
+.tab__col {
+    color: var(--text-text-secondary, #525252);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    &-1 {
+        width: calc(50% - 40px);
+    }
+    &-2 {
+        width: calc(25% - 40px);
+    }
+    &-3 {
+        width: calc(25% - 40px);
+    }
+}
+
+@media (min-width: 1056px) {
+    .price {
+        &ButtonWrapper {
+            display: flex;
+            justify-content: center;
+        }
+        &__button {
+            width: 198px;
+        }
+        &__tab {
+            min-width: auto;
+            width: 100%;
+        }
+    }
+}

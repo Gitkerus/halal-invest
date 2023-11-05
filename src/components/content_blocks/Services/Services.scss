@@ -1,0 +1,14 @@
+.services {
+    &Content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1056px) {
+    .services {
+        &Content {
+            flex-direction: row;
+        }
+    }
+}

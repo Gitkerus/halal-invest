@@ -1,0 +1,28 @@
+.documents {
+    &ContentWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 29px;
+    }
+    &ImgWrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    &__block {
+        width: 100%;
+    }
+    &__img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1056px) {
+    .documents {
+        &ImgWrapper {
+            flex-direction: row;
+        }
+        &__block {
+            width: calc(100 / 3);
+        }
+    }
+}

@@ -1,0 +1,128 @@
+.cds--file-browse-btn {
+    color: #3a8348;
+}
+
+.popUp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    height: 100%;
+    width: 100%;
+    display: none;
+    &-open {
+        display: block;
+    }
+    &CloseButton {
+        padding: 0;
+        background: none;
+        border: none;
+        display: flex;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &Content {
+        position: relative;
+        padding: 60px 10px 20px;
+        background-color: #fff;
+        height: 100%;
+        width: 100%;
+        overflow-y: auto;
+    }
+    &TopInput {
+        margin-bottom: 20px;
+    }
+
+    &__buttonBlock {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        &__button {
+            max-width: 100%;
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            padding-right: 15px;
+        }
+        &__note {
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-align: center;
+        }
+    }
+    &__nameInput {
+        margin-bottom: 10px;
+    }
+    &__title {
+        color: var(--gray-100, #161616);
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 40px; /* 125% */
+        letter-spacing: -0.5px;
+        margin-bottom: 20px;
+    }
+    &__upload {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 1056px) {
+    .popUp {
+        background: rgba(0, 0, 0, 0.4);
+        display: none;
+        &-open {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &CloseButton {
+            right: 30px;
+            top: 30px;
+        }
+        &Content {
+            padding: 60px 65px;
+            width: 656px;
+            height: fit-content;
+        }
+        &__title {
+            font-size: 60px;
+            line-height: 70px;
+        }
+    }
+}
+
+@media (min-width: 1568px) {
+    .popUp {
+        &Content {
+            padding: 60px 235px;
+            width: 1000px;
+            height: fit-content;
+        }
+    }
+}
+
+.cds--text-area {
+    &:active {
+        outline-color: #3a8348;
+    }
+    &:focus {
+        outline-color: #3a8348;
+    }
+}
+
+.cds--text-input {
+    &:active {
+        outline-color: #3a8348;
+    }
+    &:focus {
+        outline-color: #3a8348;
+    }
+}

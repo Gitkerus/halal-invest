@@ -1,0 +1,51 @@
+.projectBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    &Text {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: space-between;
+    }
+    &__description > p {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    &__link {
+        margin-top: 10px;
+    }
+    &__img {
+        aspect-ratio: 1/0.56;
+        object-fit: fill;
+    }
+    &__title {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+    }
+}
+
+@media (min-width: 1584px) {
+    .projectBlock {
+        flex-direction: row;
+        gap: 32px;
+        justify-content: space-between;
+        &Text {
+            width: calc(35% - 32px);
+            &-right {
+                order: 1;
+            }
+        }
+        &__img {
+            width: 65%;
+        }
+        &__title {
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+}

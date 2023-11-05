@@ -1,0 +1,42 @@
+.workSteps {
+    &ContentWrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    &__block {
+        height: 227px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid #c6c6c6;
+        margin-top: -1px;
+        margin-left: -1px;
+        padding: 30px 13px;
+        &__text {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+        }
+        &__title {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+        }
+    }
+}
+
+@media (min-width: 1056px) {
+    .workSteps {
+        &ContentWrapper {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        &__block {
+            width: calc(100% / 3);
+            height: 232px;
+        }
+    }
+}

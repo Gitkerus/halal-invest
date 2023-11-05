@@ -1,0 +1,52 @@
+.ourTech {
+    &BotWrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    &ContentWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    &CardsWrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    &__button {
+        margin-top: 35px;
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        padding-right: 15px;
+    }
+    &__cheme {
+        display: flex;
+        width: 100%;
+        // width: fit-content;
+        overflow: hidden;
+        overflow-x: auto;
+    }
+}
+
+@media (min-width: 1056px) {
+    .ourTech {
+        &BotWrapper {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: end;
+        }
+        &CardsWrapper {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        &__button {
+            width: calc(100% - 708px - 35px);
+            margin-left: 35px;
+            height: fit-content;
+        }
+        &__cheme {
+            width: fit-content;
+        }
+    }
+}
