@@ -15,6 +15,9 @@
     }
     &SubMenu {
         display: none;
+        &-contact {
+            display: block;
+        }
         &-open {
             display: block;
         }
@@ -133,9 +136,6 @@
 
 @media (min-width: 1584px) {
     .footer {
-        &Menu {
-            gap: 60px 34px;
-        }
         &TextWrapper {
             padding: 30px 0 80px;
             gap: 50px;

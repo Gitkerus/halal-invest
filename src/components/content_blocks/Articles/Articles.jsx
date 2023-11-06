@@ -11,13 +11,12 @@ import "./Articles.scss";
 const articles = [
   {
     id: "article1",
-    title: "Заголовок статьи блога",
+    title: "Устойчивые инвестиции и халяль: на пути к справедливым финансам",
     text: (
       <>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-        asperiores earum delectus! Rem, perspiciatis inventore commodi fuga ad
-        alias magnam totam laboriosam, sit, voluptate atque optio illum
-        expedita? Temporibus, quis.
+        В качестве выводов и предложений было озвучено следующее: необходимо
+        развивать финансово-технологический сектор, цифровые технологии,
+        которые...
       </>
     ),
     img: article1,
@@ -26,13 +25,12 @@ const articles = [
   },
   {
     id: "article2",
-    title: "Заголовок статьи блога",
+    title: "Устойчивые инвестиции и халяль: на пути к справедливым финансам",
     text: (
       <>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. In ab quasi
-        fuga, ipsa voluptatum cum. Aut commodi modi velit praesentium facilis
-        harum numquam nulla architecto consequuntur saepe atque, recusandae
-        expedita.
+        В качестве выводов и предложений было озвучено следующее: необходимо
+        развивать финансово-технологический сектор, цифровые технологии,
+        которые...
       </>
     ),
     img: article2,
@@ -42,13 +40,12 @@ const articles = [
   },
   {
     id: "article3",
-    title: "Заголовок статьи блога",
+    title: "Устойчивые инвестиции и халяль: на пути к справедливым финансам",
     text: (
       <>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, neque
-        est tenetur quasi error ipsum deserunt, ipsam nemo eius nostrum qui
-        molestias vero. Distinctio voluptate, deleniti corrupti maiores a
-        suscipit?
+        В качестве выводов и предложений было озвучено следующее: необходимо
+        развивать финансово-технологический сектор, цифровые технологии,
+        которые...
       </>
     ),
     img: article3,

@@ -13,7 +13,7 @@ const CalcPrice = () => {
   return (
     <>
       <div className="calcPrice__title contentBlock__title">
-        Узнайте стоимость
+        Рассчитайте упущенный доход
       </div>
       <div className="calcPriceWrapper">
         <div className="calcPriceTopInput">
@@ -34,20 +34,20 @@ const CalcPrice = () => {
         </div>
         <TextArea
           className="calcPrice__textArea"
-          labelText="Что нужно сделать?"
+          labelText="Сумма и Срок инвестиций"
           helperText=""
-          placeholder="Например: нужен снос кирпичного дома 6х6"
+          placeholder="Первый взнос в рублях"
           rows={5}
           id="text-area-1"
           maxCount={100}
         />
-        <div className="calcPrice__upload">
+        {/* <div className="calcPrice__upload">
           <p className="cds--file--label">Есть фотография объекта?</p>
           <FileUploaderDropContainer labelText="Нажмите для выбора файла" />
-        </div>
+        </div> */}
         <div className="calcPrice__buttonBlock">
           <Button className="calcPrice__buttonBlock__button">
-            Рассчитать стоимость
+            Получить бесплатную консультацию
           </Button>
           <p className="calcPrice__buttonBlock__note">
             Нажимая на кнопку, вы даёте согласие на обработку персональных

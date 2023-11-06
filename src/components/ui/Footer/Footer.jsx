@@ -14,106 +14,95 @@ const menuNav = [
     submenu: [
       {
         id: "l11",
-        text: "О нас",
-        link: "/about",
+        text: "Проекты",
+        link: "",
       },
       {
         id: "l12",
         text: "Менеджмент",
-        link: "/managment",
+        link: "",
       },
       {
         id: "l13",
         text: "Контакты",
-        link: "/contacts",
+        link: "",
       },
       {
         id: "l14",
-        text: "Лицензии и сертификаты",
-        link: "/license",
+        text: "Цены",
+        link: "",
       },
       {
         id: "l15",
-        text: "Награды",
+        text: "FAQ",
         link: "",
       },
       {
         id: "l16",
-        text: "FAQ",
-        link: "/faq",
+        text: "Отзывы",
+        link: "",
       },
       {
         id: "l17",
-        text: "Отзывы",
-        link: "/reviews",
+        text: "Лицензии и сертификаты",
+        link: "",
       },
       {
         id: "l18",
-        text: "Техника с которой работаем",
-        link: "/ourTech",
+        text: "Награды",
+        link: "",
+      },
+      {
+        id: "l19",
+        text: "Блог",
+        link: "",
       },
     ],
   },
   {
     id: "menu2",
-    title: "Вывоз и утилизация ",
+    title: "Услуги",
     submenu: [
       {
         id: "l21",
-        text: "Вывоз и утилизация грунта ",
-        link: "/services/service_1",
+        text: "Трейдинг",
+        link: "",
       },
       {
         id: "l22",
-        text: "Вывоз бетонного боя в Москве",
+        text: "Финансовый Консалтинг",
         link: "/services/service_2",
       },
       {
         id: "l23",
-        text: "Вывоз мусора контейнерами",
+        text: "Обучение и партнерство",
         link: "/services/service_4",
       },
       {
         id: "l24",
-        text: "Вывоз и утилизация мусора в Москве",
+        text: "Подписка на новости",
         link: "/services/service_3",
-      },
-      {
-        id: "l25",
-        text: "Вывоз снега",
-        link: "/services/service_8",
       },
     ],
   },
   {
     id: "menu3",
-    title: "Земляные работы ",
+    title: "Правовая информация",
     submenu: [
       {
         id: "l31",
-        text: "Разработка котлованов",
-        link: "/services/service_7",
-      },
-    ],
-  },
-  {
-    id: "menu4",
-    title: "Другие услуги",
-    submenu: [
-      {
-        id: "l31",
-        text: "Песок, щебень, кирпичный бой, асфальтная крошка с доставкой",
-        link: "/services/service_5",
+        text: "Отчеты",
+        link: "",
       },
       {
         id: "l32",
-        text: "Плодородный грунт с доставкой в Москве",
-        link: "/services/service_6",
+        text: "Подробное описание работы",
+        link: "",
       },
       {
         id: "l33",
-        text: "Талоны на утилизацию грунта, мусора",
-        link: "/services/service_9",
+        text: "Что такое Халяль Инвест",
+        link: "",
       },
     ],
   },
@@ -144,7 +133,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footerContent">
-        <div className="footer__title">Спецустройство</div>
+        <div className="footer__title">Халяль инвест</div>
         <div className="footerRightWrapper">
           <div className="footerTextWrapper">
             <div className="footerTextWrapperTop">
@@ -153,26 +142,50 @@ const Footer = () => {
                   Главная
                 </Link>
               </div>
-              <div className="footerLinkWrapper footerLinkWrapper-borderBot">
-                <Link className="footer__link footer__link-menu" to="/price">
-                  Цены
-                </Link>
-              </div>
-              <div className="footerLinkWrapper footerLinkWrapper-borderBot">
-                <Link className="footer__link footer__link-menu" to="/projects">
-                  Проекты
-                </Link>
-              </div>
             </div>
             <div className="footerMenu" style={{ height: footerMenuHeigh }}>
               {menuNav.map((item) => {
                 return <FooterMenuBlock {...item} key={item.id} />;
               })}
+              <div className="footerMenuBlock">
+                <div className="footerLinkWrapper">
+                  <div className="footer__link footer__link-menu">Контакты</div>
+                </div>
+                <div className="footerLinkWrapper">
+                  <div className="footerSubMenu footerSubMenu-contact">
+                    <div className="footer__link footer__link-subMenu">
+                      8 (800) 000-00-00
+                    </div>
+                  </div>
+                </div>
+                <div className="footerLinkWrapper">
+                  <div className="footerSubMenu footerSubMenu-contact">
+                    <div className="footer__link footer__link-subMenu">
+                      mail@email.com
+                    </div>
+                  </div>
+                </div>
+                <div className="footerLinkWrapper">
+                  <div className="footerSubMenu footerSubMenu-contact">
+                    <div className="footer__link footer__link-subMenu">
+                      г. Уфа, ул. Менделеева, 170
+                    </div>
+                  </div>
+                </div>
+                <div className="footerLinkWrapper">
+                  <div className="footerSubMenu footerSubMenu-contact">
+                    <div className="footer__link footer__link-subMenu">
+                      Пн-пт 9:00-20:00 <br />
+                      Сб-вс выходной
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div className="footerLicenseWrapper">
             <div className="footerLinkWrapper footerLinkWrapper-license">
-              © ООО «СУ» <br /> Все права защищены 2023
+              © ООО «Халяль Инвест». Все права защищены 2023
             </div>
             <div className="footerLinkWrapper footerLinkWrapper-license">
               Политика конфеденциальности
