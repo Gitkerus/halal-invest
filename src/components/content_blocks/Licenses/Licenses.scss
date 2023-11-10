@@ -1,0 +1,15 @@
+.licenses {
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1056px) {
+    .licenses {
+        &__content {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+}

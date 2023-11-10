@@ -13,7 +13,7 @@ const CalcPrice = () => {
   return (
     <>
       <div className="calcPrice__title contentBlock__title">
-        Рассчитайте упущенный доход
+        Оставьте заявку
       </div>
       <div className="calcPriceWrapper">
         <div className="calcPriceTopInput">

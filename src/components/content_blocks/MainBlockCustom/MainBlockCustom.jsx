@@ -1,8 +1,9 @@
 import React from "react";
 import { Button } from "carbon-components-react";
 
-import MainTrees from "../../../assets/MainTrees.png";
+// import MainTrees from "../../../assets/MainTrees.png";
 import esg from "../../../assets/esg.png";
+import video from "../../../assets/Video/Main.mp4";
 import "./MainBlockCustom.scss";
 
 const MainBlockCustom = () => {
@@ -25,7 +26,9 @@ const MainBlockCustom = () => {
         </div>
       </div>
       <div className="mainBlockCustomRightWrapper">
-        <img className="mainBlockCustom__img" src={MainTrees} alt="MainTrees" />
+        <video className="mainBlockCustom__img" autoPlay loop muted>
+          <source src={video} type="video/mp4" />
+        </video>
         <div className="mainBlockCustom__note">
           10 % с доходности идет на ВАКФ (Халяль благотворительность) При
           инвестировании в Акции необходимо иметь правильное намерение

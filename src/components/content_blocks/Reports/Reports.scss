@@ -1,4 +1,7 @@
 .reports {
+    &Block {
+        width: 100%;
+    }
     &BotWrapper {
         display: flex;
         flex-direction: column;
@@ -31,13 +34,24 @@
         line-height: 140%;
         letter-spacing: 0.16px;
     }
+    &__graphs {
+        overflow: auto;
+    }
+    &__subTitle {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 130%;
+        letter-spacing: 0.14px;
+        margin-bottom: 15px;
+    }
 }
 
 @media (min-width: 1056px) {
     .reports {
         &BotWrapper {
-            flex-direction: row;
             gap: 32px;
+            flex-direction: row;
             align-items: center;
         }
         &Content {
@@ -47,6 +61,14 @@
         }
         &__img {
             width: calc((100% - 32px) / 2);
+        }
+        &__graphs > img {
+            width: 100%;
+        }
+        &__subTitle {
+            font-size: 30px;
+            line-height: 110%;
+            margin-bottom: 32px;
         }
     }
 }

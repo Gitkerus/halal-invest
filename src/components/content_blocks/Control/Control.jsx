@@ -21,7 +21,7 @@ const control_data = [
   {
     id: "control4",
     title: "Доля прибыли",
-    text: "Инвесторы зарабатывают до 20%",
+    text: "Примерный доход около 10%",
   },
   {
     id: "control5",

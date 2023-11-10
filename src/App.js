@@ -5,7 +5,7 @@ import { Routes, Route } from "react-router-dom";
 // import { aboutService_data } from "./data/data";
 
 import Main from "./pages/Main/MainPage";
-// import About from "./pages/About/AboutPage";
+import About from "./pages/About/AboutPage";
 // import Managment from "./pages/Managment/ManagmentPage";
 // import Contacts from "./pages/Contacts/ContactsPage";
 // import Faq from "./pages/Faq/FaqPage";
@@ -22,8 +22,8 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Main />} />
-        {/* <Route path="/about" element={<About />} />
-        <Route path="/managment" element={<Managment />} />
+        <Route path="/about" element={<About />} />
+        {/* <Route path="/managment" element={<Managment />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/license" element={<License />} />

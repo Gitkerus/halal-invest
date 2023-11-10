@@ -1,8 +1,8 @@
 .ourProjects {
     &ContentWrapper {
         display: flex;
-        flex-wrap: wrap;
-        gap: 10px 10px;
+        flex-direction: column;
+        width: 100%;
     }
 
     &__button {
@@ -16,22 +16,6 @@
     &__img {
         object-fit: cover;
         height: auto;
-        &-1 {
-            width: 100%;
-            aspect-ratio: 2 / 1;
-        }
-        &-2 {
-            aspect-ratio: 1 / 1;
-            width: calc((100% - 10px) / 2);
-        }
-        &-3 {
-            aspect-ratio: 1 / 1;
-            width: calc((100% - 10px) / 2);
-        }
-        &-4 {
-            aspect-ratio: 2 / 1;
-            width: 100%;
-        }
     }
     &__text {
         font-size: 20px;
@@ -45,10 +29,15 @@
 
 @media (min-width: 1056px) {
     .ourProjects {
+        &ContentWrapper {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
         &BottomWrapper {
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
             flex-direction: column;
+            padding: 32px;
             width: calc((100% - 20px) / 3);
         }
         &__button {

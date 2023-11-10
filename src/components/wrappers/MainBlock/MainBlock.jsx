@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "carbon-components-react";
 import "./MainBlock.scss";
 
-const MainBlock = ({ text, title, img }) => {
+const MainBlock = ({ text, title, img, subTitle }) => {
   const handleClick = () => {
     document.getElementById("PopUp").classList.toggle("popUp-open");
   };
@@ -10,6 +10,7 @@ const MainBlock = ({ text, title, img }) => {
     <div className="mainBlock">
       <div className="mainBlockLeftWrapper">
         <div className="mainBlock__title">{title}</div>
+        {subTitle && <div className="mainBlock__subTitle">{subTitle}</div>}
         <div className="mainBlockBottomWrapper">
           <div className="mainBlock__text">{text}</div>
           <div className="mainBlockBtnsWrapper">
@@ -26,7 +27,7 @@ const MainBlock = ({ text, title, img }) => {
           </div>
         </div>
       </div>
-      <img className="mainBlock__img" src={img} alt={img} />
+      <img className="mainBlock__img" src={img} alt="mainBlockImg" />
     </div>
   );
 };

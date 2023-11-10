@@ -16,7 +16,7 @@ import Services from "../../components/content_blocks/Services/Services";
 import Reports from "../../components/content_blocks/Reports/Reports";
 import Control from "../../components/content_blocks/Control/Control";
 import InvestCondition from "../../components/content_blocks/InvestCondition/InvestCondition";
-import Price from "../../components/content_blocks/Price/Price";
+// import Price from "../../components/content_blocks/Price/Price";
 import CalcPrice from "../../components/content_blocks/CalcPrice/CalcPrice";
 import Articles from "../../components/content_blocks/Articles/Articles";
 
@@ -52,6 +52,7 @@ const KeyInfo_data = {
 const Scenario_data = {
   title: "Сценарии Инвестирования",
   blocksPerLine: 3,
+  linked: true,
   data: [
     {
       id: "scenario1",
@@ -77,6 +78,7 @@ const Scenario_data = {
 const HowInvest_data = {
   title: "Как Инвестировать",
   blocksPerLine: 2,
+  linked: true,
   data: [
     {
       id: "howInvest1",
@@ -109,6 +111,7 @@ const HowInvest_data = {
 const HalalInvest_data = {
   title: "Халяльные Инвестиции",
   blocksPerLine: 2,
+  linked: true,
   desc: "Халяль инвест не берет комиссию за доверительное управление, нет скрытых займов и процентов, все наши сделки 100% соответствуют индексу Халяльные инвестиции",
   data: [
     {
@@ -295,21 +298,21 @@ const contentProps = [
   },
   {
     id: "n9",
-    link: "Доверительное Управление - это",
+    link: "Условия инвестирования",
     path: "InvestCondition",
     className: "investCondition",
     component: <InvestCondition />,
   },
-  {
-    id: "n10",
-    link: "Список Халяльных акций",
-    path: "Price",
-    className: "price",
-    component: <Price data={price_data} />,
-  },
+  // {
+  //   id: "n10",
+  //   link: "Список Халяльных акций",
+  //   path: "Price",
+  //   className: "price",
+  //   component: <Price data={price_data} />,
+  // },
   {
     id: "n11",
-    link: "Рассчитайте упущенный доход",
+    link: "Оставьте заявку",
     path: "CalcPrice",
     className: "calcPrice",
     component: <CalcPrice />,

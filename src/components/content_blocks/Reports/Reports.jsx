@@ -2,7 +2,8 @@ import React from "react";
 import { Button } from "carbon-components-react";
 
 import "./Reports.scss";
-import report from "../../../assets/Reports/reportTest.png";
+import report1 from "../../../assets/Reports/report1.png";
+import report2 from "../../../assets/Reports/report2.png";
 import graphs from "../../../assets/Reports/Graphs.png";
 
 const Reports = () => {
@@ -12,12 +13,20 @@ const Reports = () => {
         Наши показатели и отчеты за периоды
       </div>
       <div className="reportsContent">
-        <img className="reports__img" src={report} alt="reports" />
-        <img className="reports__img" src={report} alt="reports" />
-        <img className="reports__img" src={report} alt="reports" />
-        <img className="reports__img" src={report} alt="reports" />
-        <img className="reports__img" src={report} alt="reports" />
-        <img className="reports__img" src={report} alt="reports" />
+        <div className="reportsBlock">
+          <div className="reports__subTitle">
+            Надежность, проверенная годами
+          </div>
+          <div className="reports__graphs">
+            <img src={report1} alt="report1" />
+          </div>
+        </div>
+        <div className="reportsBlock">
+          <div className="reports__subTitle">Данные о фонде</div>
+          <div className="reports__graphs">
+            <img src={report2} alt="report2" />
+          </div>
+        </div>
         <div className="reportsBotWrapper">
           <img className="" src={graphs} alt="graphs" />
           <div className="reportsButtonWrapper">
