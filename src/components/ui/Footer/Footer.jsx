@@ -28,11 +28,6 @@ const menuNav = [
         link: "",
       },
       {
-        id: "l14",
-        text: "Цены",
-        link: "",
-      },
-      {
         id: "l15",
         text: "FAQ",
         link: "",

@@ -247,7 +247,7 @@ const HeaderUI = () => {
           <Menu />
         </button>
         <a className="header__name" prefix="">
-          <img src={logo} alt="" srcset="" /> Халяль инвест
+          <img src={logo} alt="" srcset="" />
         </a>
         <HeaderNavigation menuItems={menuItems} />
         <HeaderGlobalBar className="headerGlobal">
