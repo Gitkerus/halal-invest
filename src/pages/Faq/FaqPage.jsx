@@ -11,7 +11,7 @@ import NavSlider from "../../components/ui/NavSlider/NavSlider";
 import PopUp from "../../components/modal/PopUp/PopUp";
 import Faq from "../../components/content_blocks/Faq/Faq";
 
-import faqMainBlock from "../../assets/aboutFull.png";
+import faqMainBlock from "../../assets/Placeholder.png";
 
 import ObserverWrap from "../../components/wrappers/ObserverWrap/ObserverWrap";
 

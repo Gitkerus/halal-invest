@@ -9,7 +9,7 @@ import MainBlock from "../../components/wrappers/MainBlock/MainBlock";
 import NavSlider from "../../components/ui/NavSlider/NavSlider";
 import AboutFull from "../../components/content_blocks/AboutFull/AboutFull";
 import OurProjects from "../../components/content_blocks/OurProjects/OurProjects";
-import Reviews from "../../components/content_blocks/Reviews/Reviews";
+import ReviewsShort from "../../components/content_blocks/ReviewsShort/ReviewsShort";
 import Licenses from "../../components/content_blocks/Licenses/Licenses";
 import Sertification from "../../components/content_blocks/Sertification/Sertification";
 import CalcPrice from "../../components/content_blocks/CalcPrice/CalcPrice";
@@ -111,9 +111,9 @@ const contentProps = [
   {
     id: "n4",
     link: "Отзывы клиентов",
-    path: "Reviews",
-    className: "reviews",
-    component: <Reviews />,
+    path: "ReviewsShort",
+    className: "reviewsShort",
+    component: <ReviewsShort />,
   },
   {
     id: "n5",

@@ -7,8 +7,7 @@ import "./ServicePage.scss";
 import HeaderUI from "../../components/ui/HeaderUI/HeaderUI";
 import MainBlock from "../../components/wrappers/MainBlock/MainBlock";
 import OurProjects from "../../components/content_blocks/OurProjects/OurProjects";
-import WorkSteps from "../../components/content_blocks/WorkSteps/WorkSteps";
-import OurProgress from "../../components/content_blocks/OurProgress/OurProgress";
+import Steps from "../../components/content_blocks/Steps/Steps";
 import CalcPrice from "../../components/content_blocks/CalcPrice/CalcPrice";
 import Footer from "../../components/ui/Footer/Footer";
 import NavSlider from "../../components/ui/NavSlider/NavSlider";
@@ -18,17 +17,48 @@ import AboutService from "../../components/content_blocks/AboutService/AboutServ
 
 import ObserverWrap from "../../components/wrappers/ObserverWrap/ObserverWrap";
 
+const steps_data = [
+  {
+    header: "этап 1",
+    title: "Сбор и анализ документации",
+    text: "Комплексное изучение условий и исходных материалов",
+  },
+  {
+    header: "этап 2",
+    title: "Разработка проекта",
+    text: "Проектирование проекта, согласование, составление сметы",
+  },
+  {
+    header: "этап 3",
+    title: "Получение разрешений",
+    text: "Согласование в ответственных органах",
+  },
+  {
+    header: "этап 4",
+    title: "Подготовка площадки",
+    text: "Установка дополнительного ПО",
+  },
+  {
+    header: "этап 5",
+    title: "Отключение всех сервисов",
+    text: "Описание",
+  },
+  {
+    header: "этап 6",
+    title: "Итоговый этап",
+    text: "Проектирование проекта, согласование, составление сметы",
+  },
+  {
+    header: "этап 7",
+    title: "Тех поддержка, итоговое согласование",
+    text: "Техническая поддержка",
+  },
+];
+
 const ServicePage = ({ service__data, mainBlock__data, price1, price2 }) => {
   const contentProps = [
     {
       id: "n1",
-      link: "Почему мы?",
-      path: "OurProgress",
-      className: "ourProgress",
-      component: <OurProgress />,
-    },
-    {
-      id: "n2",
       link: "Об услуге",
       path: "AboutService",
       className: "aboutService",
@@ -49,11 +79,11 @@ const ServicePage = ({ service__data, mainBlock__data, price1, price2 }) => {
       component: <OurProjects />,
     },
     {
-      id: "n7",
+      id: "n3",
       link: "Этапы работ",
-      path: "WorkSteps",
-      className: "workSteps",
-      component: <WorkSteps />,
+      path: "Steps",
+      className: "steps",
+      component: <Steps data={steps_data} title="Этапы работ" button={false} />,
     },
     {
       id: "n8",

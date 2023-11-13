@@ -4,20 +4,14 @@ import "./Letters.scss";
 
 import ContentBlockGrey from "../../wrappers/ContentBlockGrey/ContentBlockGrey";
 
-import letterImg1 from "../../../assets/letterImg1.png";
+import letterImg1 from "../../../assets/Letters/letter1.png";
+import letterImg2 from "../../../assets/Letters/letter2.png";
 
 const letters_data = [
   {
     id: "letter1",
     title: "Название",
-    text: (
-      <>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nemo quod
-        at, sunt natus reiciendis! Ducimus accusamus magnam, suscipit, deserunt
-        facilis molestias laboriosam, ad distinctio quibusdam delectus ipsam
-        excepturi commodi.
-      </>
-    ),
+    text: <>Описание</>,
     img: letterImg1,
     img_alt: "letterImg1",
     noLink: true,
@@ -25,76 +19,43 @@ const letters_data = [
   {
     id: "letter2",
     title: "Название",
-    text: (
-      <>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nemo quod
-        at, sunt natus reiciendis! Ducimus accusamus magnam, suscipit, deserunt
-        facilis molestias laboriosam, ad distinctio quibusdam delectus ipsam
-        excepturi commodi.
-      </>
-    ),
-    img: letterImg1,
-    img_alt: "letterImg1",
+    text: <>Описание</>,
+    img: letterImg2,
+    img_alt: "letterImg2",
     noLink: true,
+    middle: true,
   },
   {
     id: "letter3",
     title: "Название",
-    text: (
-      <>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nemo quod
-        at, sunt natus reiciendis! Ducimus accusamus magnam, suscipit, deserunt
-        facilis molestias laboriosam, ad distinctio quibusdam delectus ipsam
-        excepturi commodi.
-      </>
-    ),
+    text: <>Описание</>,
     img: letterImg1,
-    img_alt: "letterImg1",
+    img_alt: "letterImg3",
     noLink: true,
   },
   {
     id: "letter4",
     title: "Название",
-    text: (
-      <>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nemo quod
-        at, sunt natus reiciendis! Ducimus accusamus magnam, suscipit, deserunt
-        facilis molestias laboriosam, ad distinctio quibusdam delectus ipsam
-        excepturi commodi.
-      </>
-    ),
-    img: letterImg1,
-    img_alt: "letterImg1",
+    text: <>Описание</>,
+    img: letterImg2,
+    img_alt: "letterImg4",
     noLink: true,
   },
   {
     id: "letter5",
     title: "Название",
-    text: (
-      <>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nemo quod
-        at, sunt natus reiciendis! Ducimus accusamus magnam, suscipit, deserunt
-        facilis molestias laboriosam, ad distinctio quibusdam delectus ipsam
-        excepturi commodi.
-      </>
-    ),
+    text: <>Описание</>,
     img: letterImg1,
-    img_alt: "letterImg1",
+    img_alt: "letterImg5",
     noLink: true,
+    middle: true,
   },
   {
     id: "letter6",
     title: "Название",
-    text: (
-      <>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nemo quod
-        at, sunt natus reiciendis! Ducimus accusamus magnam, suscipit, deserunt
-        facilis molestias laboriosam, ad distinctio quibusdam delectus ipsam
-        excepturi commodi.
-      </>
-    ),
-    img: letterImg1,
-    img_alt: "letterImg1",
+    text: <>Описание</>,
+    img: letterImg2,
+    img_alt: "letterImg6",
     noLink: true,
   },
 ];

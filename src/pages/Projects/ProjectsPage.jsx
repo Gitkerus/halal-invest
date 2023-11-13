@@ -4,9 +4,8 @@ import "./ProjectsPage.scss";
 
 import HeaderUI from "../../components/ui/HeaderUI/HeaderUI";
 import MainBlock from "../../components/wrappers/MainBlock/MainBlock";
-import OurProgress from "../../components/content_blocks/OurProgress/OurProgress";
 
-import Reviews from "../../components/content_blocks/Reviews/Reviews";
+import ReviewsShort from "../../components/content_blocks/ReviewsShort/ReviewsShort";
 import Clients from "../../components/content_blocks/Clients/Clients";
 import OurProjectsFinished from "../../components/content_blocks/OurProjectsFinished/OurProjectsFinished";
 import CalcPrice from "../../components/content_blocks/CalcPrice/CalcPrice";
@@ -17,18 +16,11 @@ import PopUp from "../../components/modal/PopUp/PopUp";
 
 import ObserverWrap from "../../components/wrappers/ObserverWrap/ObserverWrap";
 
-import projectsMainBlock from "../../assets/projectsMainBlock.png";
+import projectsMainBlock from "../../assets/Placeholder.png";
 
 const mainBlockText = "";
 
 const contentProps = [
-  {
-    id: "n1",
-    link: "Почему мы?",
-    path: "OurProgress",
-    className: "ourProgress",
-    component: <OurProgress />,
-  },
   {
     id: "n2",
     link: "Наши проекты",
@@ -39,26 +31,19 @@ const contentProps = [
   {
     id: "n3",
     link: "Отзывы клиентов",
-    path: "Reviews",
-    className: "reviews",
-    component: <Reviews />,
+    path: "ReviewsShorts",
+    className: "reviewsShorts",
+    component: <ReviewsShort />,
   },
   {
     id: "n4",
-    link: "Наши клиенты",
-    path: "Clients",
-    className: "clients",
-    component: <Clients />,
-  },
-  {
-    id: "n5",
-    link: "Обратная связь",
+    link: "Оставьте заявку",
     path: "CalcPrice",
     className: "calcPrice",
     component: <CalcPrice />,
   },
   {
-    id: "n6",
+    id: "n5",
     link: "Контакты",
     path: "Contacts",
     className: "contacts",

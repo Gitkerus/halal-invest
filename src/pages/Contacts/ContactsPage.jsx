@@ -12,7 +12,7 @@ import PopUp from "../../components/modal/PopUp/PopUp";
 
 import ObserverWrap from "../../components/wrappers/ObserverWrap/ObserverWrap";
 
-import contactsMainBlock from "../../assets/contactsMainBlock.png";
+import contactsMainBlock from "../../assets/Placeholder.png";
 
 const mainBlock__data = {
   title: "Мы всегда на связи!",

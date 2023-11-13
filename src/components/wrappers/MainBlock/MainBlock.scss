@@ -9,7 +9,6 @@
         gap: 10px;
         padding-bottom: 30px;
     }
-
     &__button {
         max-width: 100%;
         width: 100%;
@@ -61,21 +60,19 @@
         padding: 56px 32px 60px;
         flex-direction: row;
         justify-content: space-between;
-        &BottomWrapper {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-        }
         &BtnsWrapper {
             display: flex;
             flex-direction: row;
             gap: 33px;
             padding-bottom: 0px;
         }
-        &LeftWrapper {
+        &Content {
+            height: calc(100% - 102px);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+        }
+        &LeftWrapper {
             width: calc(50% - 82px);
         }
         &__button {

@@ -24,7 +24,7 @@ const services = [
         национальной валюты.
       </>
     ),
-    link: "#",
+    link: "/services/service_1",
   },
   {
     id: "service2",
@@ -60,11 +60,11 @@ const services = [
   },
 ];
 
-const Services = () => {
+const Services = ({ title }) => {
   return (
     <>
       <div className="services__title contentBlock__title">
-        Список основных услуг
+        {title ? title : "Список основных услуг"}
       </div>
       <div className="servicesContent">
         {services.map((service) => {

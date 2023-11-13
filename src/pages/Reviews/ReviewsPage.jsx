@@ -9,32 +9,43 @@ import Footer from "../../components/ui/Footer/Footer";
 import NavSlider from "../../components/ui/NavSlider/NavSlider";
 import PopUp from "../../components/modal/PopUp/PopUp";
 import Letters from "../../components/content_blocks/Letters/Letters";
+import CalcPrice from "../../components/content_blocks/CalcPrice/CalcPrice";
+import Reviews from "../../components/content_blocks/Reviews/Reviews";
 
-import reviewsMainBlock from "../../assets/reviewsMainBlock.png";
+import reviewsMainBlock from "../../assets/Placeholder.png";
 
 import ObserverWrap from "../../components/wrappers/ObserverWrap/ObserverWrap";
 
 const mainBlock__data = {
   title: "Награды и отзывы",
-  text: (
-    <>
-      Отзывы о деловой репутации Общества с ограниченной ответственностью
-      «Спецустройство».
-    </>
-  ),
+  text: <>Отзывы о деловой репутации "Халяль инвест"</>,
   img: reviewsMainBlock,
 };
 
 const contentProps = [
   {
     id: "n1",
-    link: "Благодарственные письма",
+    link: "Отзывы клиентов",
     path: "Reviews",
+    className: "reviews",
+    component: <Reviews />,
+  },
+  {
+    id: "n2",
+    link: "Благодарственные письма",
+    path: "Letters",
     className: "letters",
     component: <Letters />,
   },
   {
-    id: "n2",
+    id: "n3",
+    link: "Оставьте заявку",
+    path: "CalcPrice",
+    className: "calcPrice",
+    component: <CalcPrice />,
+  },
+  {
+    id: "n4",
     link: "Контакты",
     path: "Contacts",
     className: "contacts",

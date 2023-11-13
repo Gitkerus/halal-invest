@@ -1,0 +1,119 @@
+.mainBlockServices {
+    display: flex;
+    flex-direction: column;
+    color: var(#161616);
+    padding: 50px 16px 100px;
+    &BtnsWrapper {
+        padding-bottom: 48px;
+    }
+
+    &__button {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        padding-right: 15px;
+    }
+    &__desc {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        letter-spacing: 0.14px;
+        margin-bottom: 32px;
+    }
+    &__esg {
+        max-width: 208px;
+        height: auto;
+        margin-bottom: 32px;
+    }
+
+    &__img {
+        min-height: 172px;
+        width: 100%;
+        margin-bottom: 32px;
+        margin-top: 48px;
+    }
+    &__note {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        letter-spacing: 0.14px;
+    }
+    &__text {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 135%;
+        margin-bottom: 32px;
+    }
+    &__text p {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 135%;
+        margin-bottom: 24px;
+    }
+}
+
+@media (min-width: 1056px) {
+    .mainBlockServices {
+        padding: 56px 32px 60px;
+        flex-direction: row;
+        justify-content: space-between;
+        &BottomWrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        &BtnsWrapper {
+            display: flex;
+            flex-direction: row;
+            gap: 33px;
+            padding-bottom: 0px;
+        }
+        &LeftWrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: calc(50% - 82px);
+        }
+        &RightWrapper {
+            width: 50%;
+        }
+        &__button {
+            max-width: fit-content;
+            width: fit-content;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px;
+        }
+        &__desc {
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+        &__esg {
+            width: 316px;
+            margin-bottom: 0;
+        }
+        &__text {
+            margin-bottom: 0;
+            font-size: 60px;
+            line-height: 115%;
+            margin-bottom: 50px;
+        }
+        &__title {
+            font-size: 30px;
+        }
+    }
+}

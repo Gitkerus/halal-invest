@@ -22,12 +22,42 @@ import "./HeaderUI.scss";
 const menuNav = [
   {
     menu: "aboutCompany",
-    text: "О нас",
+    text: "О компании",
     submenu: [
       {
-        id: "",
-        text: "Меню",
+        id: "menuItem_1_1",
+        text: "О нас",
         link: "/about",
+      },
+      {
+        id: "menuItem_1_2",
+        text: "Отзывы",
+        link: "/reviews",
+      },
+      {
+        id: "menuItem_1_3",
+        text: "Лицензии",
+        link: "/license",
+      },
+      {
+        id: "menuItem_1_4",
+        text: "Часто задоваемые вопросы",
+        link: "/faq",
+      },
+      {
+        id: "menuItem_1_5",
+        text: "Контакты",
+        link: "/contacts",
+      },
+      {
+        id: "menuItem_1_6",
+        text: "Отчеты",
+        link: "/reports",
+      },
+      {
+        id: "menuItem_1_7",
+        text: "Что такое Халяльные инвестиции",
+        link: "/what_is_halal_invest",
       },
     ],
   },
@@ -41,12 +71,42 @@ const menuItems = [
   },
   {
     id: "menuLink_2",
-    link: "О нас",
+    link: "О компании",
     menuItems: [
       {
         id: "menuItem_1_1",
-        text: "Меню",
-        link: "",
+        text: "О нас",
+        link: "/about",
+      },
+      {
+        id: "menuItem_1_2",
+        text: "Отзывы",
+        link: "/reviews",
+      },
+      {
+        id: "menuItem_1_3",
+        text: "Лицензии",
+        link: "/license",
+      },
+      {
+        id: "menuItem_1_4",
+        text: "Часто задоваемые вопросы",
+        link: "/faq",
+      },
+      {
+        id: "menuItem_1_5",
+        text: "Контакты",
+        link: "/contacts",
+      },
+      {
+        id: "menuItem_1_6",
+        text: "Отчеты",
+        link: "/reports",
+      },
+      {
+        id: "menuItem_1_7",
+        text: "Что такое Халяльные инвестиции",
+        link: "/what_is_halal_invest",
       },
     ],
     nested: false,
@@ -54,82 +114,97 @@ const menuItems = [
   {
     id: "menuLink_3",
     link: "Услуги",
-    menuItems: [
-      {
-        menu: "",
-        text: "Меню",
-        submenu: [
-          {
-            id: "l21",
-            text: "Меню",
-            link: "",
-          },
-        ],
-      },
-    ],
-    nested: true,
+    path: "/services",
   },
   {
     id: "menuLink_4",
-    link: "Цены",
-    path: "",
+    link: "Проекты",
+    path: "/projects",
   },
   {
     id: "menuLink_5",
-    link: "Инвестиции",
-    path: "",
+    link: "Описание работы",
+    path: "/work_description",
   },
-  {
-    id: "menuLink_6",
-    link: "Блог",
-    path: "",
-  },
-  {
-    id: "menuLink_7",
-    link: "Правовая информация",
-    menuItems: [
-      {
-        menu: "",
-        text: "Меню",
-        submenu: [
-          {
-            id: "l21",
-            text: "Меню",
-            link: "",
-          },
-        ],
-      },
-    ],
-    nested: true,
-  },
-  {
-    id: "menuLink_8",
-    link: "Контакты",
-    path: "",
-  },
-  {
-    id: "menuLink_9",
-    link: "Агентам",
-    path: "",
-  },
-  {
-    id: "menuLink_10",
-    link: "Еще",
-    menuItems: [
-      {
-        menu: "",
-        text: "Меню",
-        submenu: [
-          {
-            id: "l21",
-            text: "Меню",
-            link: "",
-          },
-        ],
-      },
-    ],
-    nested: true,
-  },
+  // {
+  //   id: "menuLink_3",
+  //   link: "Услуги",
+  //   menuItems: [
+  //     {
+  //       menu: "",
+  //       text: "Меню",
+  //       submenu: [
+  //         {
+  //           id: "l21",
+  //           text: "Меню",
+  //           link: "",
+  //         },
+  //       ],
+  //     },
+  //   ],
+  //   nested: true,
+  // },
+  // {
+  //   id: "menuLink_4",
+  //   link: "Цены",
+  //   path: "",
+  // },
+  // {
+  //   id: "menuLink_5",
+  //   link: "Инвестиции",
+  //   path: "",
+  // },
+  // {
+  //   id: "menuLink_6",
+  //   link: "Блог",
+  //   path: "",
+  // },
+  // {
+  //   id: "menuLink_7",
+  //   link: "Правовая информация",
+  //   menuItems: [
+  //     {
+  //       menu: "",
+  //       text: "Меню",
+  //       submenu: [
+  //         {
+  //           id: "l21",
+  //           text: "Меню",
+  //           link: "",
+  //         },
+  //       ],
+  //     },
+  //   ],
+  //   nested: true,
+  // },
+  // {
+  //   id: "menuLink_8",
+  //   link: "Контакты",
+  //   path: "/contacts",
+  // },
+  // {
+  //   id: "menuLink_9",
+  //   link: "Агентам",
+  //   path: "",
+  // },
+  // {
+  //   id: "menuLink_10",
+  //   link: "Еще",
+  //   menuItems: [
+  //     {
+  //       menu: "",
+  //       text: "Меню",
+  //       submenu: [
+  //         {
+  //           id: "l21",
+  //           text: "Меню",
+  //           link: "",
+  //         },
+  //       ],
+  //     },
+  //   ],
+  //   nested: true,
+  // },
 ];
 
 const HeaderUI = () => {
@@ -190,11 +265,14 @@ const HeaderUI = () => {
             {menuNav.map((item) => (
               <BurgerMenuBlock {...item} key={item.menu} />
             ))}
-            <a className="header__burgerLink" href="/price">
-              Цены
+            <a className="header__burgerLink" href="/services">
+              Услуги
             </a>
             <a className="header__burgerLink" href="/projects">
               Проекты
+            </a>
+            <a className="header__burgerLink" href="/work_description">
+              Описание работы
             </a>
           </div>
         )}

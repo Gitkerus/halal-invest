@@ -1,0 +1,79 @@
+.steps {
+    &ContentWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    &__button {
+        padding: 10px 13px;
+        min-height: 42px;
+        width: 100%;
+        justify-content: center;
+        margin-top: 32px;
+    }
+    &__header {
+        color: #027a48;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        letter-spacing: 0.14px;
+        margin-bottom: 14px;
+    }
+    &__subText {
+        margin-top: 32px;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        letter-spacing: 0.14px;
+    }
+    &__title {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 130%;
+        letter-spacing: 0.14px;
+        margin-bottom: 24px;
+    }
+    &__text {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        letter-spacing: 0.14px;
+    }
+}
+
+@media (min-width: 1056px) {
+    .steps {
+        &Block {
+            width: calc((100% - 96px) / 3);
+        }
+        &ContentWrapper {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 48px 48px;
+        }
+        &__button {
+            max-width: 259px;
+        }
+        &__header {
+            font-size: 18px;
+        }
+        &__subText {
+            margin-top: 64px;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 135%;
+        }
+        &__title {
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 110%;
+            letter-spacing: 0.14px;
+        }
+    }
+}

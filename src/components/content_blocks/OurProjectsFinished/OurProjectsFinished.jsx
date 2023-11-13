@@ -4,55 +4,61 @@ import "./OurProjectsFinished.scss";
 
 import ProjectBlock from "./ProjectBlock/ProjectBlock";
 
-import project_1 from "../../../assets/OurProjectsFinished/project_1.png";
-import project_2 from "../../../assets/OurProjectsFinished/project_2.png";
-import project_3 from "../../../assets/OurProjectsFinished/project_3.png";
-import project_4 from "../../../assets/OurProjectsFinished/project_4.png";
+import project_1 from "../../../assets/OurProjectsFinished/finishedProject1.png";
+import project_2 from "../../../assets/OurProjectsFinished/finishedProject2.png";
+import project_3 from "../../../assets/OurProjectsFinished/finishedProject3.png";
+import project_4 from "../../../assets/OurProjectsFinished/finishedProject4.png";
 
 const ourProjectsFinished__data = [
   {
     id: "project1",
     img: project_1,
-    title: "Вывоз железобетонного боя с Тушинского РГС",
-    description: (
+    title: (
       <>
-        <p>Адрес объекта: Тушино</p>
-        <p>Даты: 2020 год</p>
-        <p>Срок: работы были выполнены за 12 дней</p>
-        <p>Заказчик: Тушинский РГС</p>
+        Трейдинг компании <br />
+        ООО “Название компании”
       </>
     ),
+    description: <>Описание работ</>,
     link: "/projects/project_1",
     rightText: false,
   },
   {
     id: "project2",
     img: project_2,
-    title: "Вывоз грунта при строительстве станции метро Мнёвники",
-    description: <></>,
+    title: (
+      <>
+        Трейдинг компании <br />
+        ООО “Название компании”
+      </>
+    ),
+    description: <>Описание работ</>,
     link: "/projects/project_2",
     rightText: true,
   },
   {
     id: "project3",
     img: project_3,
-    title: "Вывоз грунта из старого спортивного комплекса Олимпийский",
-    description: (
+    title: (
       <>
-        <p>Адрес объекта: Москва ст. Олимпийский</p>
-        <p>Заказчик: Олимпийский</p>
-        <p>Даты: 2018 год</p>
+        Трейдинг компании <br />
+        ООО “Название компании”
       </>
     ),
+    description: <>Описание работ</>,
     link: "/projects/project_3",
     rightText: false,
   },
   {
     id: "project4",
     img: project_4,
-    title:
-      "Вывоз отходов сноса здания и строительства по адресу Большой Харитоньевский переулок 13А с10",
-    description: <></>,
+    title: (
+      <>
+        Трейдинг компании <br />
+        ООО “Название компании”
+      </>
+    ),
+    description: <>Описание работ</>,
     link: "/projects/project_4",
     rightText: true,
   },

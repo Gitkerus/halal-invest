@@ -8,9 +8,11 @@ import Contacts from "../../components/content_blocks/Contacts/Contacts";
 import Footer from "../../components/ui/Footer/Footer";
 import NavSlider from "../../components/ui/NavSlider/NavSlider";
 import PopUp from "../../components/modal/PopUp/PopUp";
-import Documents from "../../components/content_blocks/Documents/Documents";
+import Licenses from "../../components/content_blocks/Licenses/Licenses";
+import Sertification from "../../components/content_blocks/Sertification/Sertification";
+import CalcPrice from "../../components/content_blocks/CalcPrice/CalcPrice";
 
-import licenseMainBlock from "../../assets/licenseMainBlock.png";
+import licenseMainBlock from "../../assets/Placeholder.png";
 
 import ObserverWrap from "../../components/wrappers/ObserverWrap/ObserverWrap";
 
@@ -18,13 +20,13 @@ import licenseImg1 from "../../assets/License/license1.png";
 import licenseImg2 from "../../assets/License/license2.png";
 import licenseImg3 from "../../assets/License/license3.png";
 
-import appImg1 from "../../assets/App/app1.png";
-import appImg2 from "../../assets/App/app2.png";
-import appImg3 from "../../assets/App/app3.png";
-
 const mainBlock__data = {
-  title: "Лицензии",
-  text: <>Лицензии и сопутствующие документация</>,
+  title: (
+    <>
+      Лицензии <br />и сертификаты
+    </>
+  ),
+  text: <></>,
   img: licenseMainBlock,
 };
 
@@ -43,35 +45,20 @@ const license__data = [
   },
 ];
 
-const app__data = [
-  {
-    id: "app1",
-    img: appImg1,
-  },
-  {
-    id: "app2",
-    img: appImg2,
-  },
-  {
-    id: "app3",
-    img: appImg3,
-  },
-];
-
 const contentProps = [
   {
     id: "n1",
     link: "Лицензии",
-    path: "License",
-    className: "documents",
-    component: <Documents title="Лицензии" document_data={license__data} />,
+    path: "Licenses",
+    className: "licenses",
+    component: <Licenses />,
   },
   {
     id: "n2",
-    link: "Приложение",
-    path: "App",
-    className: "documents",
-    component: <Documents title="Приложение" document_data={app__data} />,
+    link: "Сертификаты",
+    path: "Sertification",
+    className: "sertification",
+    component: <Sertification />,
   },
   {
     id: "n3",
@@ -79,6 +66,13 @@ const contentProps = [
     path: "Contacts",
     className: "contacts",
     component: <Contacts />,
+  },
+  {
+    id: "n4",
+    link: "Оставьте заявку",
+    path: "CalcPrice",
+    className: "calcPrice",
+    component: <CalcPrice />,
   },
 ];
 

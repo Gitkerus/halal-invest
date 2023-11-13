@@ -10,9 +10,11 @@ const MainBlock = ({ text, title, img, subTitle }) => {
     <div className="mainBlock">
       <div className="mainBlockLeftWrapper">
         <div className="mainBlock__title">{title}</div>
-        {subTitle && <div className="mainBlock__subTitle">{subTitle}</div>}
-        <div className="mainBlockBottomWrapper">
-          <div className="mainBlock__text">{text}</div>
+        <div className="mainBlockContent">
+          <div className="mainBlockBottomWrapper">
+            {subTitle && <div className="mainBlock__subTitle">{subTitle}</div>}
+            <div className="mainBlock__text">{text}</div>
+          </div>
           <div className="mainBlockBtnsWrapper">
             <Button className="mainBlock__button" onClick={handleClick}>
               Оставить заявку

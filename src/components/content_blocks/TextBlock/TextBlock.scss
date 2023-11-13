@@ -53,6 +53,9 @@
             justify-content: space-between;
         }
         &Content {
+            &1 {
+                width: 70%;
+            }
             &2 {
                 width: calc((100% - 50px) / 2);
             }
