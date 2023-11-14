@@ -4,9 +4,9 @@ import ContentBlockGrey from "../../wrappers/ContentBlockGrey/ContentBlockGrey";
 
 import "./Licenses.scss";
 
-import license1 from "../../../assets/License/license1.png";
-import license2 from "../../../assets/License/license2.png";
-import license3 from "../../../assets/License/license3.png";
+import license1 from "../../../assets/Placeholder.png";
+import license2 from "../../../assets/Placeholder.png";
+import license3 from "../../../assets/Placeholder.png";
 
 const licenses__data = [
   {

@@ -2,10 +2,10 @@ import React from "react";
 import { Button } from "carbon-components-react";
 
 import "./DynamicCost.scss";
-import dynamicCost1 from "../../../assets/dynamicCost/dynamicCost1.png";
-import dynamicCost2 from "../../../assets/dynamicCost/dynamicCost2.png";
-import dynamicCost3 from "../../../assets/dynamicCost/dynamicCost3.png";
-import dynamicCost4 from "../../../assets/dynamicCost/dynamicCost4.png";
+import dynamicCost1 from "../../../assets/Placeholder.png";
+import dynamicCost2 from "../../../assets/Placeholder.png";
+import dynamicCost3 from "../../../assets/Placeholder.png";
+import dynamicCost4 from "../../../assets/Placeholder.png";
 
 const DynamicCost = () => {
   return (
@@ -15,23 +15,12 @@ const DynamicCost = () => {
       </div>
       <div className="dynamicCostContent">
         <div className="dynamicCostBlock">
-          <div className="dynamicCost__graphs">
-            <img src={dynamicCost1} alt="dynamicCost1" />
-          </div>
-        </div>
-        <div className="dynamicCostBlock">
-          <div className="dynamicCost__graphs">
-            <img src={dynamicCost2} alt="dynamicCost2" />
-          </div>
-        </div>
-        <div className="dynamicCostBlock">
-          <div className="dynamicCost__graphs">
-            <img src={dynamicCost3} alt="dynamicCost3" />
-          </div>
-        </div>
-        <div className="dynamicCostBlock">
-          <div className="dynamicCost__graphs">
-            <img src={dynamicCost4} alt="dynamicCost4" />
+          <div className="dynamicCostImgWrapper">
+            <img
+              className="dynamicCost__img"
+              src={dynamicCost1}
+              alt="dynamicCost1"
+            />
           </div>
         </div>
       </div>

@@ -16,7 +16,8 @@ import HeaderNavigation from "./HeaderNavigation/HeaderNavigation";
 import { Menu } from "@carbon/icons-react";
 
 import logo from "../../../assets/logo.png";
-
+import rus from "../../../assets/rus.png";
+import { ChevronDown } from "@carbon/icons-react";
 import "./HeaderUI.scss";
 
 const menuNav = [
@@ -247,10 +248,14 @@ const HeaderUI = () => {
           <Menu />
         </button>
         <a className="header__name" prefix="">
-          <img src={logo} alt="" srcset="" />
+          <img className="header__logo" src={logo} alt="" srcset="" /> Халяль
+          инвест
         </a>
         <HeaderNavigation menuItems={menuItems} />
         <HeaderGlobalBar className="headerGlobal">
+          <button className="header__language">
+            <img src={rus} alt="" /> Русский <ChevronDown size={14} />
+          </button>
           <Button className="header__calcBtn">Личный кабинет</Button>
         </HeaderGlobalBar>
         {burgerMenuOpen && (

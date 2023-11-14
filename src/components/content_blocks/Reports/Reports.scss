@@ -34,13 +34,13 @@
         line-height: 140%;
         letter-spacing: 0.16px;
     }
-    &__graphs {
+    &ImgWrapper {
         overflow: auto;
     }
     &__subTitle {
         font-size: 16px;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 400;
         line-height: 130%;
         letter-spacing: 0.14px;
         margin-bottom: 15px;
@@ -60,7 +60,9 @@
             gap: 32px 32px;
         }
         &__img {
-            width: calc((100% - 32px) / 2);
+            aspect-ratio: 2 / 1;
+            width: 100%;
+            object-fit: cover;
         }
         &__graphs > img {
             width: 100%;

@@ -4,9 +4,9 @@ import ContentBlockGrey from "../../wrappers/ContentBlockGrey/ContentBlockGrey";
 
 import "./Sertification.scss";
 
-import sertification1 from "../../../assets/Sertification/sertification1.png";
-import sertification2 from "../../../assets/Sertification/sertification2.png";
-import sertification3 from "../../../assets/Sertification/sertification3.png";
+import sertification1 from "../../../assets/Placeholder.png";
+import sertification2 from "../../../assets/Placeholder.png";
+import sertification3 from "../../../assets/Placeholder.png";
 
 const sertification__data = [
   {

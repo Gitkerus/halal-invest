@@ -106,24 +106,24 @@ const menuNav = [
 const Footer = () => {
   const [footerMenuHeigh, setFooterMenuHeigh] = useState();
 
-  useEffect(() => {
-    const handleChange = () => {
-      if (window.innerWidth >= 1056) {
-        const height = document.getElementById(
-          "footerMenuBlock_menu1"
-        ).offsetHeight;
-        setFooterMenuHeigh(height + "px");
-      } else {
-        setFooterMenuHeigh("auto");
-      }
-    };
-    handleChange();
-    window.addEventListener("resize", handleChange);
+  // useEffect(() => {
+  //   const handleChange = () => {
+  //     if (window.innerWidth >= 1056) {
+  //       const height = document.getElementById(
+  //         "footerMenuBlock_menu1"
+  //       ).offsetHeight;
+  //       setFooterMenuHeigh(height + "px");
+  //     } else {
+  //       setFooterMenuHeigh("auto");
+  //     }
+  //   };
+  //   handleChange();
+  //   window.addEventListener("resize", handleChange);
 
-    return () => {
-      window.removeEventListener("resize", handleChange);
-    };
-  });
+  //   return () => {
+  //     window.removeEventListener("resize", handleChange);
+  //   };
+  // });
 
   return (
     <footer className="footer">

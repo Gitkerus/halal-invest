@@ -140,25 +140,25 @@ sup {
 }
 
 .cds--btn--primary {
-    background-color: #027a48;
+    background-color: #039855;
     &:hover {
-        background-color: #285b32;
+        background-color: #00ab57;
     }
     &:active {
-        background-color: #285b32;
+        background-color: #00ab57;
     }
     &:focus {
-        border-color: #285b32;
+        border-color: #00ab57;
     }
 }
 
 .cds--btn--tertiary {
-    color: #027a48;
-    border-color: #027a48;
+    color: #039855;
+    border-color: #039855;
     &:hover {
-        background-color: #027a48;
+        background-color: #00ab57;
     }
     &:active {
-        background-color: #285b32;
+        background-color: #039855;
     }
 }

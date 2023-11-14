@@ -4,8 +4,8 @@ import "./Letters.scss";
 
 import ContentBlockGrey from "../../wrappers/ContentBlockGrey/ContentBlockGrey";
 
-import letterImg1 from "../../../assets/Letters/letter1.png";
-import letterImg2 from "../../../assets/Letters/letter2.png";
+import letterImg1 from "../../../assets/Placeholder.png";
+import letterImg2 from "../../../assets/Placeholder.png";
 
 const letters_data = [
   {
