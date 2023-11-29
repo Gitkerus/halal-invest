@@ -1,7 +1,5 @@
 import React from "react";
 
-import { useState, useEffect } from "react";
-
 import "./AboutPage.scss";
 
 import HeaderUI from "../../components/ui/HeaderUI/HeaderUI";
@@ -168,19 +166,6 @@ const contentProps = [
 ];
 
 const About = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleWindowResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-    window.addEventListener("resize", handleWindowResize);
-
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  });
-
   return (
     <>
       <HeaderUI />

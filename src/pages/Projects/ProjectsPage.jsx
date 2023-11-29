@@ -14,7 +14,8 @@ import Footer from "../../components/ui/Footer/Footer";
 import NavSlider from "../../components/ui/NavSlider/NavSlider";
 import PopUp from "../../components/modal/PopUp/PopUp";
 
-import ObserverWrap from "../../components/wrappers/ContentBlockWrapper/ContentBlockWrap";
+import ContentBlockWraper from "../../components/wrappers/ContentBlockWrapper/ContentBlockWrap";
+import ContentWrapper from "../../components/wrappers/ConentWrapper/ContentWrapper";
 
 import projectsMainBlock from "../../assets/Placeholder.png";
 
@@ -63,19 +64,23 @@ const ProjectsPage = () => {
         />
         <div className="contentWrapper">
           <NavSlider props={contentProps} />
-          <div className="contentCollum">
+          <ContentWrapper>
             {contentProps.map((content) => {
-              return (
-                <ObserverWrap
-                  key={content.path}
-                  className={content.className}
-                  id={content.path}
-                >
-                  {content.component}
-                </ObserverWrap>
-              );
+              if (content.className === "tags") {
+                return content.component;
+              } else {
+                return (
+                  <ContentBlockWraper
+                    key={content.path}
+                    className={content.className}
+                    id={content.path}
+                  >
+                    {content.component}
+                  </ContentBlockWraper>
+                );
+              }
             })}
-          </div>
+          </ContentWrapper>
         </div>
       </div>
       <PopUp />
