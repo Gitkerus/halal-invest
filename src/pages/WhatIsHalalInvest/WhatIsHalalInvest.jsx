@@ -17,7 +17,8 @@ import Price from "../../components/content_blocks/Price/Price";
 
 import workDescriptionMainBlock from "../../assets/Placeholder.png";
 
-import ObserverWrap from "../../components/wrappers/ObserverWrap/ObserverWrap";
+import ContentBlockWraper from "../../components/wrappers/ContentBlockWrapper/ContentBlockWrap";
+import ContentWrapper from "../../components/wrappers/ConentWrapper/ContentWrapper";
 
 const mainBlock__data = {
   title: "Что такое Халяльные инвестиции",
@@ -320,19 +321,23 @@ const WhatIsHalalInvest = () => {
         <MainBlock {...mainBlock__data} />
         <div className="contentWrapper">
           <NavSlider props={contentProps} />
-          <div className="contentCollum">
+          <ContentWrapper>
             {contentProps.map((content) => {
-              return (
-                <ObserverWrap
-                  key={content.path}
-                  className={content.className}
-                  id={content.path}
-                >
-                  {content.component}
-                </ObserverWrap>
-              );
+              if (content.className === "tags") {
+                return content.component;
+              } else {
+                return (
+                  <ContentBlockWraper
+                    key={content.path}
+                    className={content.className}
+                    id={content.path}
+                  >
+                    {content.component}
+                  </ContentBlockWraper>
+                );
+              }
             })}
-          </div>
+          </ContentWrapper>
         </div>
       </div>
       <PopUp />

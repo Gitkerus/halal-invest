@@ -1,9 +1,8 @@
 import React, { useRef, useEffect } from "react";
-import { useInView } from "react-intersection-observer";
-import { useGlobalContext } from "../../../context/contex";
-import classnames from "classnames";
 
-const ObserverWrap = ({ children, id, className }) => {
+import { useGlobalContext } from "../../../context/contex";
+
+const ContentWrapper = ({ children }) => {
   const { setVisibleContent } = useGlobalContext();
   const sections = useRef([]);
 
@@ -35,20 +34,7 @@ const ObserverWrap = ({ children, id, className }) => {
     };
   }, []);
 
-  // const { ref } = useInView({
-  //   threshold: 0.5,
-  //   rootMargin: "",
-  //   onChange: (inView, entry) => {
-  //     if (inView) {
-  //       setVisibleContent(entry.target.id);
-  //     }
-  //   },
-  // });
-  return (
-    <div className={classnames(className, "contentBlock")} id={id}>
-      {children}
-    </div>
-  );
+  return <div className="contentCollum">{children}</div>;
 };
 
-export default ObserverWrap;
+export default ContentWrapper;

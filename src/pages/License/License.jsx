@@ -14,7 +14,8 @@ import CalcPrice from "../../components/content_blocks/CalcPrice/CalcPrice";
 
 import licenseMainBlock from "../../assets/Placeholder.png";
 
-import ObserverWrap from "../../components/wrappers/ObserverWrap/ObserverWrap";
+import ContentBlockWraper from "../../components/wrappers/ContentBlockWrapper/ContentBlockWrap";
+import ContentWrapper from "../../components/wrappers/ConentWrapper/ContentWrapper";
 
 import licenseImg1 from "../../assets/License/license1.png";
 import licenseImg2 from "../../assets/License/license2.png";
@@ -84,19 +85,23 @@ const License = () => {
         <MainBlock {...mainBlock__data} />
         <div className="contentWrapper">
           <NavSlider props={contentProps} />
-          <div className="contentCollum">
+          <ContentWrapper>
             {contentProps.map((content) => {
-              return (
-                <ObserverWrap
-                  key={content.path}
-                  className={content.className}
-                  id={content.path}
-                >
-                  {content.component}
-                </ObserverWrap>
-              );
+              if (content.className === "tags") {
+                return content.component;
+              } else {
+                return (
+                  <ContentBlockWraper
+                    key={content.path}
+                    className={content.className}
+                    id={content.path}
+                  >
+                    {content.component}
+                  </ContentBlockWraper>
+                );
+              }
             })}
-          </div>
+          </ContentWrapper>
         </div>
       </div>
       <PopUp />

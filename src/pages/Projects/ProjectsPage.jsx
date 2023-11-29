@@ -14,7 +14,7 @@ import Footer from "../../components/ui/Footer/Footer";
 import NavSlider from "../../components/ui/NavSlider/NavSlider";
 import PopUp from "../../components/modal/PopUp/PopUp";
 
-import ObserverWrap from "../../components/wrappers/ObserverWrap/ObserverWrap";
+import ObserverWrap from "../../components/wrappers/ContentBlockWrapper/ContentBlockWrap";
 
 import projectsMainBlock from "../../assets/Placeholder.png";
 

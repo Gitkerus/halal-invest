@@ -20,7 +20,8 @@ import InvestCondition from "../../components/content_blocks/InvestCondition/Inv
 import CalcPrice from "../../components/content_blocks/CalcPrice/CalcPrice";
 import Articles from "../../components/content_blocks/Articles/Articles";
 
-import ObserverWrap from "../../components/wrappers/ObserverWrap/ObserverWrap";
+import ContentBlockWraper from "../../components/wrappers/ContentBlockWrapper/ContentBlockWrap";
+import ContentWrapper from "../../components/wrappers/ConentWrapper/ContentWrapper";
 
 import MainBlockCustom from "../../components/content_blocks/MainBlockCustom/MainBlockCustom";
 
@@ -360,23 +361,23 @@ const Main = () => {
         <MainBlockCustom />
         <div className="contentWrapper">
           <NavSlider props={contentProps} />
-          <div className="contentCollum">
+          <ContentWrapper>
             {contentProps.map((content) => {
               if (content.className === "tags") {
                 return content.component;
               } else {
                 return (
-                  <ObserverWrap
+                  <ContentBlockWraper
                     key={content.path}
                     className={content.className}
                     id={content.path}
                   >
                     {content.component}
-                  </ObserverWrap>
+                  </ContentBlockWraper>
                 );
               }
             })}
-          </div>
+          </ContentWrapper>
         </div>
       </div>
       <PopUp />

@@ -15,7 +15,8 @@ import Contacts from "../../components/content_blocks/Contacts/Contacts";
 import Steps from "../../components/content_blocks/Steps/Steps";
 import StartInvest from "../../components/content_blocks/StartInvest/StartInvest";
 
-import ObserverWrap from "../../components/wrappers/ObserverWrap/ObserverWrap";
+import ContentBlockWraper from "../../components/wrappers/ContentBlockWrapper/ContentBlockWrap";
+import ContentWrapper from "../../components/wrappers/ConentWrapper/ContentWrapper";
 
 const steps_data = [
   {
@@ -97,19 +98,23 @@ const ServicesPage = () => {
         <MainBlockServices />
         <div className="contentWrapper">
           <NavSlider props={contentProps} />
-          <div className="contentCollum">
+          <ContentWrapper>
             {contentProps.map((content) => {
-              return (
-                <ObserverWrap
-                  key={content.path}
-                  className={content.className}
-                  id={content.path}
-                >
-                  {content.component}
-                </ObserverWrap>
-              );
+              if (content.className === "tags") {
+                return content.component;
+              } else {
+                return (
+                  <ContentBlockWraper
+                    key={content.path}
+                    className={content.className}
+                    id={content.path}
+                  >
+                    {content.component}
+                  </ContentBlockWraper>
+                );
+              }
             })}
-          </div>
+          </ContentWrapper>
         </div>
       </div>
       <PopUp />

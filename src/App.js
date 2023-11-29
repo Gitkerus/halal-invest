@@ -48,18 +48,9 @@ function App() {
         {/* <Route path="/managment" element={<Managment />} />
         <Route path="/price" element={<Price />} />
         <Route path="/reviews" element={<Reviews />} />
-        <Route path="/ourTech" element={<OurTech />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/project_1" element={<Project1 />} />
-        {aboutService_data.map((page) => {
-          return (
-            <Route
-              key={page.id}
-              path={`services/${page.id}`}
-              element={<Service {...page} />}
-            />
-          );
-        })}  */}
+         */}
       </Routes>
     </>
   );
