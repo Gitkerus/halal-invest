@@ -44,6 +44,7 @@ const reportInfo_data = {
   title: "Информация",
   blocksPerLine: 1,
   linked: false,
+  id: "whatIsHalalInvest",
   data: [
     {
       id: "whatIsHalalInvest1",

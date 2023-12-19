@@ -29,24 +29,28 @@ const KeyInfo_data = {
   title: "Ключевая информация",
   blocksPerLine: 3,
   linked: true,
+  id: "keyInfo",
   data: [
     {
       id: "key1",
       title: "Инвестирование в перспективные активы",
       text: "С качественным распределением активов по компаниям, диверсификация капитала",
       path: "",
+      noArrow: true,
     },
     {
       id: "key2",
       title: "Профессиональное управление",
       text: "За сохранением набора активов следит наша команда, а не инвесторы",
       path: "",
+      noArrow: true,
     },
     {
       id: "key3",
       title: "Накопите на цель",
-      text: "Достижение цели намного проще с Халяль Инвест",
+      text: "Достижение на любые цели намного проще с Халяль Инвест (купить авто и тд.)",
       path: "",
+      noArrow: true,
     },
   ],
 };
@@ -55,6 +59,7 @@ const Scenario_data = {
   title: "Сценарии Инвестирования",
   blocksPerLine: 3,
   linked: true,
+  id: "scenario",
   data: [
     {
       id: "scenario1",
@@ -81,6 +86,7 @@ const HowInvest_data = {
   title: "Как Инвестировать",
   blocksPerLine: 2,
   linked: true,
+  id: "howInvest",
   data: [
     {
       id: "howInvest1",
@@ -114,10 +120,11 @@ const HalalInvest_data = {
   title: "Халяльные Инвестиции",
   blocksPerLine: 2,
   linked: true,
+  id: "halalInvest",
   desc: "Халяль инвест не берет комиссию за доверительное управление, нет скрытых займов и процентов, все наши сделки 100% соответствуют индексу Халяльные инвестиции",
   data: [
     {
-      id: "invest1",
+      id: "halalInvest1",
       title: "Доверительное управление",
       text: (
         <>
@@ -286,7 +293,7 @@ const contentProps = [
   },
   {
     id: "n7",
-    link: "Наши показатели и отчеты за периоды",
+    link: "Наши показатели и отчеты",
     path: "Reports",
     className: "reports",
     component: <Reports />,

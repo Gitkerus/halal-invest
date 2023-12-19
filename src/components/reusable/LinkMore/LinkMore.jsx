@@ -6,10 +6,11 @@ import classnames from "classnames";
 
 import "./LinkMore.scss";
 
-const LinkMore = ({ className, path }) => {
+const LinkMore = ({ className, path, noArrow }) => {
   return (
     <a className={classnames("linkMore", className)} href={path}>
-      Подробнее <ArrowRight size={20} />
+      Подробнее
+      {noArrow ? "" : <ArrowRight size={20} />}
     </a>
   );
 };

@@ -45,6 +45,7 @@ const WhatIsHalalInvest_data = {
   title: "Как Инвестировать",
   blocksPerLine: 1,
   linked: false,
+  id: "whatIsHalalInvest",
   data: [
     {
       id: "whatIsHalalInvest1",
@@ -85,6 +86,7 @@ const HalalInvestRules_data = {
   title: "Основные правила исламского инвестирования",
   blocksPerLine: 1,
   linked: false,
+  id: "halalInvestRules",
   data: [
     {
       id: "halalInvestRules1",
@@ -152,6 +154,7 @@ const InvestAllow_data = {
   title: "Во что разрешено инвестировать?",
   blocksPerLine: 1,
   linked: false,
+  id: "investAllow",
   data: [
     {
       id: "investAllow1",

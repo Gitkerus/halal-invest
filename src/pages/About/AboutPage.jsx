@@ -63,6 +63,7 @@ const mainBlock__data = {
 const FundControl_data = {
   title: "Как мы управляем фондом?",
   blocksPerLine: 3,
+  id: "fundControl",
   data: [
     {
       id: "fundControl1",
@@ -102,7 +103,7 @@ const contentProps = [
   },
   {
     id: "n3",
-    link: "Наши показатели и отчеты за периоды",
+    link: "Наши показатели и отчеты",
     path: "Reports",
     className: "reports",
     component: <Reports />,
