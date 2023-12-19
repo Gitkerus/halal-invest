@@ -52,6 +52,11 @@ const ReviewsShort = () => {
           <a href="/reviews">
             <Button className="reviews__button">Смотреть кейсы</Button>
           </a>
+          <a href="/reviews">
+            <Button className="reviews__button" kind="tertiary">
+              Оставить отзыв
+            </Button>
+          </a>
         </div>
       </div>
     </>

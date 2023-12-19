@@ -163,7 +163,7 @@ const Footer = () => {
                 <div className="footerLinkWrapper">
                   <div className="footerSubMenu footerSubMenu-contact">
                     <div className="footer__link footer__link-subMenu">
-                      г. Уфа, ул. Менделеева, 170
+                      г. Уфа Ул. Авроры 2, Президент Отель
                     </div>
                   </div>
                 </div>

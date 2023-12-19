@@ -1,6 +1,6 @@
 import React from "react";
 
-import placeholder from "../../../assets/Placeholder.png";
+import about_img from "../../../assets/AboutImg.png";
 
 import "./AboutFull.scss";
 
@@ -26,7 +26,7 @@ const AboutFull = () => {
         </div>
       </div>
       <div className="aboutFullRightWrapper">
-        <img className="aboutFull__img" src={placeholder} alt="aboutImg" />
+        <img className="aboutFull__img" src={about_img} alt="aboutImg" />
       </div>
     </>
   );

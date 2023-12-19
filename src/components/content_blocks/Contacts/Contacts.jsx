@@ -11,7 +11,7 @@ const Contacts = () => {
           <div className="contacts__block">
             <div className="contacts__block__title">Адрес главного офиса</div>
             <div className="contacts__block__text">
-              г. Уфа, ул. Менделеева, 170
+              г. Уфа Ул. Авроры 2, Президент Отель
             </div>
           </div>
           <div className="contacts__block">
@@ -31,14 +31,11 @@ const Contacts = () => {
           </div>
         </div>
         <iframe
-          className="contacts__map"
-          src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab96dfbf9abbfbdf650eb71d09890f74171ea3e98213e09fd883c2ea13d44573c&amp;source=constructor"
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A9e2a8dcc857d55d34dd84321d168b02cb6f53dd2f7759216fd83796d7677813c&amp;source=constructor"
           width="931"
           height="572"
           frameborder="0"
         ></iframe>
-
-        {/* <img className="contacts__map" src={map} alt="map" /> */}
       </div>
     </>
   );

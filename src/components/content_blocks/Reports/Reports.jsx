@@ -13,7 +13,7 @@ const Reports = () => {
         Наши показатели и отчеты за периоды
       </div>
       <div className="reportsContent">
-        <div className="reportsBlock">
+        {/* <div className="reportsBlock">
           <div className="reports__subTitle">
             Надежность, проверенная годами
           </div>
@@ -26,7 +26,7 @@ const Reports = () => {
           <div className="reportsImgWrapper">
             <img className="reports__img" src={report2} alt="report2" />
           </div>
-        </div>
+        </div> */}
         <div className="reportsBotWrapper">
           <img className="" src={graphs} alt="graphs" />
           <div className="reportsButtonWrapper">

@@ -22,7 +22,7 @@ import Contacts from "../../components/content_blocks/Contacts/Contacts";
 import ContentBlockWraper from "../../components/wrappers/ContentBlockWrapper/ContentBlockWrap";
 import ContentWrapper from "../../components/wrappers/ConentWrapper/ContentWrapper";
 
-import placeholder from "../../assets/Placeholder.png";
+import main_img from "../../assets/HistoryMain.png";
 
 const mainBlock__data = {
   title: "История компании",
@@ -57,7 +57,7 @@ const mainBlock__data = {
       осуществляем.
     </>
   ),
-  img: placeholder,
+  img: main_img,
 };
 
 const FundControl_data = {
@@ -74,13 +74,13 @@ const FundControl_data = {
     {
       id: "fundControl2",
       title: "Портфель",
-      text: "Портфель содержит акции российских компаний с высокими дивидендными выплатами. Диверсифируем портфель по отраслям, чтобы снизить риски",
+      text: "Портфель содержит акции зарубежных компаний с высокими дивидендными выплатами. Диверсифируем портфель по отраслям, чтобы снизить риски",
       path: "",
     },
     {
       id: "fundControl3",
-      title: "Структура и валюта",
-      text: "Портфель содержит акции российских компаний с высокими дивидендными выплатами. Диверсифируем портфель по отраслям, чтобы снизить риски",
+      title: "Валюта",
+      text: "Мы выбрали доллар США в качестве основной валюты фонда из-за его стабильности и широкого признания на международном уровне. Независимо от географического расположения наших клиентов",
       path: "",
     },
   ],
