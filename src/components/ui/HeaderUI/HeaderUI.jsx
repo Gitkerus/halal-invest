@@ -17,6 +17,7 @@ import { Menu } from "@carbon/icons-react";
 
 import logo from "../../../assets/logo.png";
 import rus from "../../../assets/rus.png";
+import phone_call from "../../../assets/phone_call.png";
 import { ChevronDown } from "@carbon/icons-react";
 import "./HeaderUI.scss";
 
@@ -223,10 +224,6 @@ const HeaderUI = () => {
     }
   };
 
-  const openPopUp = () => {
-    document.getElementById("PopUp").classList.toggle("popUp-open");
-  };
-
   useEffect(() => {
     const handleWindowResize = () => {
       if (window.innerWidth >= 1568) {
@@ -254,8 +251,18 @@ const HeaderUI = () => {
         <HeaderNavigation menuItems={menuItems} />
         <HeaderGlobalBar className="headerGlobal">
           <button className="header__language">
-            <img src={rus} alt="" /> Русский <ChevronDown size={14} />
+            <img src={rus} alt="" />{" "}
+            <span className="header__language__choice">Русский</span>
+            <ChevronDown size={14} />
           </button>
+          <a href="tel:+79969044776" className="header__callBtn">
+            <img
+              src={phone_call}
+              alt="phone_call"
+              className="header__callBtn__img"
+            />
+            <span className="header__callBtn__text">8 (996) 904-47-76</span>
+          </a>
           <Button className="header__calcBtn">Личный кабинет</Button>
         </HeaderGlobalBar>
         {burgerMenuOpen && (
