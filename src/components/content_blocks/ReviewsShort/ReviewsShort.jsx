@@ -2,8 +2,9 @@ import React from "react";
 
 import { Button } from "carbon-components-react";
 
-import "./ReviewsShort.scss";
+import { useGlobalContext } from "../../../context/contex";
 
+import "./ReviewsShort.scss";
 const reviews_data = [
   {
     id: "review1",
@@ -33,6 +34,12 @@ const reviews_data = [
 ];
 
 const ReviewsShort = () => {
+  const { openModalReviewForm, setOpenModalReviewForm } = useGlobalContext();
+
+  const openPopUpReview = () => {
+    setOpenModalReviewForm(!openModalReviewForm);
+  };
+
   return (
     <>
       <div className="reviews__title contentBlock__title">Отзывы клиентов</div>
@@ -52,11 +59,13 @@ const ReviewsShort = () => {
           <a href="/reviews">
             <Button className="reviews__button">Смотреть кейсы</Button>
           </a>
-          <a href="/reviews">
-            <Button className="reviews__button" kind="tertiary">
-              Оставить отзыв
-            </Button>
-          </a>
+          <Button
+            className="reviews__button"
+            kind="tertiary"
+            onClick={openPopUpReview}
+          >
+            Оставить отзыв
+          </Button>
         </div>
       </div>
     </>

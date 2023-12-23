@@ -4,13 +4,10 @@ import { useState, useEffect } from "react";
 
 import "./MainPage.scss";
 
-import HeaderUI from "../../components/ui/HeaderUI/HeaderUI";
 import TextBlock from "../../components/content_blocks/TextBlock/TextBlock";
 import Tags from "../../components/content_blocks/Tags/Tags";
 import Contacts from "../../components/content_blocks/Contacts/Contacts";
-import Footer from "../../components/ui/Footer/Footer";
 import NavSlider from "../../components/ui/NavSlider/NavSlider";
-import PopUp from "../../components/modal/PopUp/PopUp";
 import StartInvest from "../../components/content_blocks/StartInvest/StartInvest";
 import Services from "../../components/content_blocks/Services/Services";
 import Reports from "../../components/content_blocks/Reports/Reports";
@@ -114,7 +111,6 @@ const HowInvest_data = {
 const HalalInvest_data = {
   title: "Халяльные Инвестиции",
   blocksPerLine: 2,
-  linked: true,
   id: "halalInvest",
   desc: "Халяль инвест не берет комиссию за доверительное управление, нет скрытых займов и процентов, все наши сделки 100% соответствуют индексу Халяльные инвестиции",
   data: [
@@ -358,7 +354,6 @@ const Main = () => {
 
   return (
     <>
-      <HeaderUI />
       <div className="content">
         <MainBlockCustom />
         <div className="contentWrapper">
@@ -382,8 +377,6 @@ const Main = () => {
           </ContentWrapper>
         </div>
       </div>
-      <PopUp />
-      <Footer />
     </>
   );
 };

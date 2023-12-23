@@ -1,10 +1,13 @@
 import React from "react";
 import { Button } from "carbon-components-react";
+import { useGlobalContext } from "../../../context/contex";
 import "./MainBlock.scss";
 
 const MainBlock = ({ text, title, img, subTitle }) => {
-  const handleClick = () => {
-    document.getElementById("PopUp").classList.toggle("popUp-open");
+  const { openModalContactForm, setOpenModalContactForm } = useGlobalContext();
+
+  const openPopUp = () => {
+    setOpenModalContactForm(!openModalContactForm);
   };
   return (
     <div className="mainBlock">
@@ -21,13 +24,13 @@ const MainBlock = ({ text, title, img, subTitle }) => {
           </div>
         </div>
         <div className="mainBlockBtnsWrapper">
-          <Button className="mainBlock__button" onClick={handleClick}>
+          <Button className="mainBlock__button" onClick={openPopUp}>
             Оставить заявку
           </Button>
           <Button
             className="mainBlock__button"
             kind="tertiary"
-            onClick={handleClick}
+            onClick={openPopUp}
           >
             Рассчитать стоимость
           </Button>

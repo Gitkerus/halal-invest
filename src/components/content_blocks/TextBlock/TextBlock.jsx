@@ -60,7 +60,7 @@ const TextBlock = ({ title, data, desc, blocksPerLine, linked, id }) => {
                 </div>
                 <div className="textBlockContent__text">{item.text}</div>
               </div>
-              {linked && <LinkMore path={item.link} noArrow={item.noArrow} />}
+              {linked && <LinkMore path={item.link}/>}
             </div>
           );
         })}

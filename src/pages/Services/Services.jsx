@@ -4,13 +4,10 @@ import { useState, useEffect } from "react";
 
 import "./Services.scss";
 
-import HeaderUI from "../../components/ui/HeaderUI/HeaderUI";
 import MainBlockServices from "../../components/content_blocks/MainBlockServices/MainBlockServices";
 import Services from "../../components/content_blocks/Services/Services";
 import CalcPrice from "../../components/content_blocks/CalcPrice/CalcPrice";
-import Footer from "../../components/ui/Footer/Footer";
 import NavSlider from "../../components/ui/NavSlider/NavSlider";
-import PopUp from "../../components/modal/PopUp/PopUp";
 import Contacts from "../../components/content_blocks/Contacts/Contacts";
 import Steps from "../../components/content_blocks/Steps/Steps";
 import StartInvest from "../../components/content_blocks/StartInvest/StartInvest";
@@ -93,7 +90,6 @@ const contentProps = [
 const ServicesPage = () => {
   return (
     <>
-      <HeaderUI />
       <div className="content">
         <MainBlockServices />
         <div className="contentWrapper">
@@ -117,8 +113,6 @@ const ServicesPage = () => {
           </ContentWrapper>
         </div>
       </div>
-      <PopUp />
-      <Footer />
     </>
   );
 };

@@ -2,12 +2,9 @@ import React from "react";
 
 import "./License.scss";
 
-import HeaderUI from "../../components/ui/HeaderUI/HeaderUI";
 import MainBlock from "../../components/wrappers/MainBlock/MainBlock";
 import Contacts from "../../components/content_blocks/Contacts/Contacts";
-import Footer from "../../components/ui/Footer/Footer";
 import NavSlider from "../../components/ui/NavSlider/NavSlider";
-import PopUp from "../../components/modal/PopUp/PopUp";
 import Licenses from "../../components/content_blocks/Licenses/Licenses";
 import Sertification from "../../components/content_blocks/Sertification/Sertification";
 import CalcPrice from "../../components/content_blocks/CalcPrice/CalcPrice";
@@ -80,7 +77,6 @@ const contentProps = [
 const License = () => {
   return (
     <>
-      <HeaderUI />
       <div className="content">
         <MainBlock {...mainBlock__data} />
         <div className="contentWrapper">
@@ -104,8 +100,6 @@ const License = () => {
           </ContentWrapper>
         </div>
       </div>
-      <PopUp />
-      <Footer />
     </>
   );
 };

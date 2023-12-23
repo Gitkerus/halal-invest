@@ -2,13 +2,10 @@ import React from "react";
 
 import "./FaqPage.scss";
 
-import HeaderUI from "../../components/ui/HeaderUI/HeaderUI";
 import MainBlock from "../../components/wrappers/MainBlock/MainBlock";
 import CalcPrice from "../../components/content_blocks/CalcPrice/CalcPrice";
 import Contacts from "../../components/content_blocks/Contacts/Contacts";
-import Footer from "../../components/ui/Footer/Footer";
 import NavSlider from "../../components/ui/NavSlider/NavSlider";
-import PopUp from "../../components/modal/PopUp/PopUp";
 import Faq from "../../components/content_blocks/Faq/Faq";
 
 import faqMainBlock from "../../assets/Placeholder.png";
@@ -54,7 +51,6 @@ const contentProps = [
 const FaqPage = () => {
   return (
     <>
-      <HeaderUI />
       <div className="content">
         <MainBlock {...mainBlock__data} />
         <div className="contentWrapper">
@@ -78,8 +74,6 @@ const FaqPage = () => {
           </ContentWrapper>
         </div>
       </div>
-      <PopUp />
-      <Footer />
     </>
   );
 };

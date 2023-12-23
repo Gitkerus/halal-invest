@@ -2,7 +2,6 @@ import React from "react";
 
 import "./AboutPage.scss";
 
-import HeaderUI from "../../components/ui/HeaderUI/HeaderUI";
 import MainBlock from "../../components/wrappers/MainBlock/MainBlock";
 import NavSlider from "../../components/ui/NavSlider/NavSlider";
 import AboutFull from "../../components/content_blocks/AboutFull/AboutFull";
@@ -11,8 +10,6 @@ import ReviewsShort from "../../components/content_blocks/ReviewsShort/ReviewsSh
 import Licenses from "../../components/content_blocks/Licenses/Licenses";
 import Sertification from "../../components/content_blocks/Sertification/Sertification";
 import CalcPrice from "../../components/content_blocks/CalcPrice/CalcPrice";
-import Footer from "../../components/ui/Footer/Footer";
-import PopUp from "../../components/modal/PopUp/PopUp";
 import Reports from "../../components/content_blocks/Reports/Reports";
 import Control from "../../components/content_blocks/Control/Control";
 import InvestCondition from "../../components/content_blocks/InvestCondition/InvestCondition";
@@ -169,7 +166,6 @@ const contentProps = [
 const About = () => {
   return (
     <>
-      <HeaderUI />
       <div className="content">
         <MainBlock {...mainBlock__data} />
         <div className="contentWrapper">
@@ -193,8 +189,6 @@ const About = () => {
           </ContentWrapper>
         </div>
       </div>
-      <PopUp />
-      <Footer />
     </>
   );
 };

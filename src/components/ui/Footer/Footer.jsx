@@ -149,14 +149,14 @@ const Footer = () => {
                 <div className="footerLinkWrapper">
                   <div className="footerSubMenu footerSubMenu-contact">
                     <div className="footer__link footer__link-subMenu">
-                      8 (800) 000-00-00
+                      8 (996) 904-47-76
                     </div>
                   </div>
                 </div>
                 <div className="footerLinkWrapper">
                   <div className="footerSubMenu footerSubMenu-contact">
                     <div className="footer__link footer__link-subMenu">
-                      mail@email.com
+                      halalinvest.com@gmail.com
                     </div>
                   </div>
                 </div>

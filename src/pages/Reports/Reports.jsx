@@ -2,13 +2,10 @@ import React from "react";
 
 import "./Reports.scss";
 
-import HeaderUI from "../../components/ui/HeaderUI/HeaderUI";
 import MainBlock from "../../components/wrappers/MainBlock/MainBlock";
 import CalcPrice from "../../components/content_blocks/CalcPrice/CalcPrice";
 import Contacts from "../../components/content_blocks/Contacts/Contacts";
-import Footer from "../../components/ui/Footer/Footer";
 import NavSlider from "../../components/ui/NavSlider/NavSlider";
-import PopUp from "../../components/modal/PopUp/PopUp";
 import DynamicCost from "../../components/content_blocks/DynamicCost/DynamicCost";
 import Letters from "../../components/content_blocks/Letters/Letters";
 import ReviewsShort from "../../components/content_blocks/ReviewsShort/ReviewsShort";
@@ -140,7 +137,6 @@ const contentProps = [
 const Reports = () => {
   return (
     <>
-      <HeaderUI />
       <div className="content">
         <MainBlock {...mainBlock__data} />
         <div className="contentWrapper">
@@ -164,8 +160,6 @@ const Reports = () => {
           </ContentWrapper>
         </div>
       </div>
-      <PopUp />
-      <Footer />
     </>
   );
 };

@@ -2,17 +2,13 @@ import React from "react";
 
 import "./ProjectsPage.scss";
 
-import HeaderUI from "../../components/ui/HeaderUI/HeaderUI";
 import MainBlock from "../../components/wrappers/MainBlock/MainBlock";
 
 import ReviewsShort from "../../components/content_blocks/ReviewsShort/ReviewsShort";
-import Clients from "../../components/content_blocks/Clients/Clients";
 import OurProjectsFinished from "../../components/content_blocks/OurProjectsFinished/OurProjectsFinished";
 import CalcPrice from "../../components/content_blocks/CalcPrice/CalcPrice";
 import Contacts from "../../components/content_blocks/Contacts/Contacts";
-import Footer from "../../components/ui/Footer/Footer";
 import NavSlider from "../../components/ui/NavSlider/NavSlider";
-import PopUp from "../../components/modal/PopUp/PopUp";
 
 import ContentBlockWraper from "../../components/wrappers/ContentBlockWrapper/ContentBlockWrap";
 import ContentWrapper from "../../components/wrappers/ConentWrapper/ContentWrapper";
@@ -55,7 +51,6 @@ const contentProps = [
 const ProjectsPage = () => {
   return (
     <>
-      <HeaderUI />
       <div className="content">
         <MainBlock
           text={mainBlockText}
@@ -83,8 +78,6 @@ const ProjectsPage = () => {
           </ContentWrapper>
         </div>
       </div>
-      <PopUp />
-      <Footer />
     </>
   );
 };

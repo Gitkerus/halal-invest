@@ -1,5 +1,8 @@
 import React from "react";
 import { Button } from "carbon-components-react";
+
+import { useGlobalContext } from "../../../context/contex";
+
 import "./InvestCondition.scss";
 
 const investCondition_data = [
@@ -21,6 +24,12 @@ const investCondition_data = [
 ];
 
 const InvestCondition = () => {
+  const { openModalContactForm, setOpenModalContactForm } = useGlobalContext();
+
+  const openPopUp = () => {
+    setOpenModalContactForm(!openModalContactForm);
+  };
+
   return (
     <>
       <div className="investCondition__title contentBlock__title">
@@ -37,7 +46,7 @@ const InvestCondition = () => {
         })}
         <div className="investConditionButtonWrapper">
           Также есть персональные пакеты крупным инвесторам
-          <Button className="investCondition__button">
+          <Button className="investCondition__button" onClick={openPopUp}>
             Получить инвестиционное предложение
           </Button>
         </div>

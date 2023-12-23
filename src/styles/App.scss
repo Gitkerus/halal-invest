@@ -161,4 +161,13 @@ sup {
     &:active {
         background-color: #039855;
     }
+    &:focus {
+        border-color: #039855;
+        background-color: #039855;
+        color: white;
+    }
+}
+
+.cds--text-area {
+    resize: none;
 }

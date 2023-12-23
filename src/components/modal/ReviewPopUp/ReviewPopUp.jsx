@@ -1,26 +1,26 @@
 import React from "react";
 import { useState, useEffect } from "react";
 
-import { submitNewClient } from "../../../api/telegramPosts";
+import { submitNewReview } from "../../../api/telegramPosts";
 import { Button, TextInput, TextArea } from "carbon-components-react";
 import { Close } from "@carbon/icons-react";
 
 import { useGlobalContext } from "../../../context/contex";
 
-import "./PopUp.scss";
+import "./ReviewPopUp.scss";
 
-const PopUp = () => {
-  const { openModalContactForm, setOpenModalContactForm } = useGlobalContext();
+const ReviewPopUp = () => {
+  const { openModalReviewForm, setOpenModalReviewForm } = useGlobalContext();
 
   const closePopUp = () => {
-    setOpenModalContactForm(!openModalContactForm);
+    setOpenModalReviewForm(!openModalReviewForm);
   };
 
   const submitForm = (e) => {
     e.preventDefault();
-    submitNewClient({
+    submitNewReview({
       name: e.target.name.value,
-      phone: e.target.phone.value,
+      service: e.target.service.value,
       comment: e.target.comment.value,
     });
     e.target.reset();
@@ -43,15 +43,15 @@ const PopUp = () => {
 
   return (
     <form
-      className={openModalContactForm ? "popUp popUp-open" : "popUp"}
-      id="PopUp"
+      className={openModalReviewForm ? "popUp popUp-open" : "popUp"}
+      id="ReviewPopUp"
       onSubmit={submitForm}
     >
       <div className="popUpContent">
         <button className="popUpCloseButton" type="button" onClick={closePopUp}>
           <Close size={windowWidth <= 1056 ? 30 : 50} />
         </button>
-        <div className="popUp__title">Узнайте стоимость</div>
+        <div className="popUp__title">Оставить отзыв</div>
         <div className="popUpWrapper">
           <div className="popUpTopInput">
             <TextInput
@@ -60,33 +60,33 @@ const PopUp = () => {
               name="name"
               labelText="Ваше имя*"
               placeholder="Иванов Иван"
-              id="text-input-1"
+              id="text-input-2"
               required
             />
             <TextInput
               className="popUp__numberInput"
-              type="tel"
-              name="phone"
-              labelText="Номер телефона*"
-              placeholder="+7 900 000 00-00"
-              pattern="\+?[0-9\s\-\(\)]+"
+              type="text"
+              name="service"
+              labelText="Какой услугой воспользовались?"
+              placeholder="Например: Консалтинг"
               required
-              id="text-input-1"
+              id="text-input-2"
             />
           </div>
           <TextArea
             className="popUp__textArea"
-            labelText="Что нужно сделать?"
+            labelText="Ваш отзыв"
             helperText=""
-            placeholder="Например: "
+            placeholder="Текст отзыва"
             rows={4}
-            id="text-area-1"
+            id="text-area-2"
             maxCount={100}
             name="comment"
+            required
           />
           <div className="popUp__buttonBlock">
             <Button className="popUp__buttonBlock__button" type="submit">
-              Рассчитать стоимость
+              Отправить отзыв
             </Button>
             <p className="popUp__buttonBlock__note">
               Нажимая на кнопку, вы даёте согласие на обработку персональных
@@ -99,4 +99,4 @@ const PopUp = () => {
   );
 };
 
-export default PopUp;
+export default ReviewPopUp;

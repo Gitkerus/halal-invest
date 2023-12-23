@@ -4,26 +4,28 @@ import { Routes, Route } from "react-router-dom";
 
 import { aboutService_data } from "./data/data";
 
+import HeaderUI from "./components/ui/HeaderUI/HeaderUI";
+import Footer from "./components/ui/Footer/Footer";
+import PopUp from "./components/modal/PopUp/PopUp";
+import ReviewPopUp from "./components/modal/ReviewPopUp/ReviewPopUp";
+
 import Main from "./pages/Main/MainPage";
 import About from "./pages/About/AboutPage";
-// import Managment from "./pages/Managment/ManagmentPage";
 import Contacts from "./pages/Contacts/ContactsPage";
 import Faq from "./pages/Faq/FaqPage";
 import License from "./pages/License/License";
-// import Price from "./pages/Price/PricePage";
 import Reviews from "./pages/Reviews/ReviewsPage";
 import Reports from "./pages/Reports/Reports";
 import WorkDescription from "./pages/WorkDescription/WorkDescription";
 import WhatIsHalalInvest from "./pages/WhatIsHalalInvest/WhatIsHalalInvest";
 import Services from "./pages/Services/Services";
-// import OurTech from "./pages/OurTech/OurTechPage";
 import Projects from "./pages/Projects/ProjectsPage";
-// import Project1 from "./pages/Projects/Project1Page/Project1Page";
 import Service from "././pages/SingleService/ServicePage";
 
 function App() {
   return (
     <>
+      <HeaderUI />
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/about" element={<About />} />
@@ -52,6 +54,9 @@ function App() {
         <Route path="/projects/project_1" element={<Project1 />} />
          */}
       </Routes>
+      <PopUp />
+      <ReviewPopUp />
+      <Footer />
     </>
   );
 }

@@ -11,7 +11,7 @@ const control_data = [
   {
     id: "control2",
     title: "Инвестиции в Активы",
-    text: "Рублевые и Валютные",
+    text: "Валютные",
   },
   {
     id: "control3",

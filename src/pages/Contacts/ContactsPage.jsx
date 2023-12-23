@@ -2,13 +2,10 @@ import React from "react";
 
 import "./ContactsPage.scss";
 
-import HeaderUI from "../../components/ui/HeaderUI/HeaderUI";
 import MainBlock from "../../components/wrappers/MainBlock/MainBlock";
 import CalcPrice from "../../components/content_blocks/CalcPrice/CalcPrice";
 import Contacts from "../../components/content_blocks/Contacts/Contacts";
-import Footer from "../../components/ui/Footer/Footer";
 import NavSlider from "../../components/ui/NavSlider/NavSlider";
-import PopUp from "../../components/modal/PopUp/PopUp";
 
 import ContentBlockWraper from "../../components/wrappers/ContentBlockWrapper/ContentBlockWrap";
 import ContentWrapper from "../../components/wrappers/ConentWrapper/ContentWrapper";
@@ -46,7 +43,6 @@ const contentProps = [
 const ContactsPage = () => {
   return (
     <>
-      <HeaderUI />
       <div className="content">
         <MainBlock {...mainBlock__data} />
         <div className="contentWrapper">
@@ -70,8 +66,6 @@ const ContactsPage = () => {
           </ContentWrapper>
         </div>
       </div>
-      <PopUp />
-      <Footer />
     </>
   );
 };

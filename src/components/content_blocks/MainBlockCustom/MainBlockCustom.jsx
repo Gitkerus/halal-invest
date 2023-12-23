@@ -1,12 +1,19 @@
 import React from "react";
 import { Button } from "carbon-components-react";
 
-// import MainTrees from "../../../assets/MainTrees.png";
+import { useGlobalContext } from "../../../context/contex";
+
 import esg from "../../../assets/esg.png";
 import video from "../../../assets/Video/Main.mp4";
 import "./MainBlockCustom.scss";
 
 const MainBlockCustom = () => {
+  const { openModalContactForm, setOpenModalContactForm } = useGlobalContext();
+
+  const openPopUp = () => {
+    setOpenModalContactForm(!openModalContactForm);
+  };
+
   return (
     <div className="mainBlockCustom">
       <div className="mainBlockCustomLeftWrapper">
@@ -20,7 +27,7 @@ const MainBlockCustom = () => {
             БИРЖЕВОЙ ФОНД, ИНВЕСТИРУЮЩИЙ В АКЦИИ КОМПАНИЙ В СООТВЕТСТВИИ С
             НОРМАМИ ШАРИАТА ESG-рейтинг
           </div>
-          <Button className="mainBlockCustom__button">
+          <Button className="mainBlockCustom__button" onClick={openPopUp}>
             Бесплатная консультация
           </Button>
         </div>

@@ -42,16 +42,11 @@ const menuNav = [
       },
       {
         id: "menuItem_1_4",
-        text: "Часто задоваемые вопросы",
-        link: "/faq",
-      },
-      {
-        id: "menuItem_1_5",
         text: "Контакты",
         link: "/contacts",
       },
       {
-        id: "menuItem_1_6",
+        id: "menuItem_1_5",
         text: "Отчеты",
         link: "/reports",
       },
@@ -91,7 +86,7 @@ const menuItems = [
       },
       {
         id: "menuItem_1_4",
-        text: "Часто задоваемые вопросы",
+        text: "Часто задаваемые вопросы",
         link: "/faq",
       },
       {
@@ -126,6 +121,11 @@ const menuItems = [
     id: "menuLink_5",
     link: "Описание работы",
     path: "/work_description",
+  },
+  {
+    id: "menuLink_6",
+    link: "Часто задаваемые вопросы",
+    path: "/faq",
   },
   // {
   //   id: "menuLink_3",
@@ -278,6 +278,9 @@ const HeaderUI = () => {
             </a>
             <a className="header__burgerLink" href="/work_description">
               Описание работы
+            </a>
+            <a className="header__burgerLink" href="//faq">
+              Часто задаваемые вопросы
             </a>
           </div>
         )}

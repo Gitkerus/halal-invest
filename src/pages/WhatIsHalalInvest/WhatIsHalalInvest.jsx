@@ -2,13 +2,10 @@ import React from "react";
 
 import "./WhatIsHalalInvest.scss";
 
-import HeaderUI from "../../components/ui/HeaderUI/HeaderUI";
 import MainBlock from "../../components/wrappers/MainBlock/MainBlock";
 import CalcPrice from "../../components/content_blocks/CalcPrice/CalcPrice";
 import Contacts from "../../components/content_blocks/Contacts/Contacts";
-import Footer from "../../components/ui/Footer/Footer";
 import NavSlider from "../../components/ui/NavSlider/NavSlider";
-import PopUp from "../../components/modal/PopUp/PopUp";
 import StartInvest from "../../components/content_blocks/StartInvest/StartInvest";
 import ReviewsShort from "../../components/content_blocks/ReviewsShort/ReviewsShort";
 import Services from "../../components/content_blocks/Services/Services";
@@ -319,7 +316,6 @@ const contentProps = [
 const WhatIsHalalInvest = () => {
   return (
     <>
-      <HeaderUI />
       <div className="content">
         <MainBlock {...mainBlock__data} />
         <div className="contentWrapper">
@@ -343,8 +339,6 @@ const WhatIsHalalInvest = () => {
           </ContentWrapper>
         </div>
       </div>
-      <PopUp />
-      <Footer />
     </>
   );
 };

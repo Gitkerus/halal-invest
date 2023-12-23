@@ -4,14 +4,11 @@ import { useState, useEffect } from "react";
 
 import "./ServicePage.scss";
 
-import HeaderUI from "../../components/ui/HeaderUI/HeaderUI";
 import MainBlock from "../../components/wrappers/MainBlock/MainBlock";
 import OurProjects from "../../components/content_blocks/OurProjects/OurProjects";
 import Steps from "../../components/content_blocks/Steps/Steps";
 import CalcPrice from "../../components/content_blocks/CalcPrice/CalcPrice";
-import Footer from "../../components/ui/Footer/Footer";
 import NavSlider from "../../components/ui/NavSlider/NavSlider";
-import PopUp from "../../components/modal/PopUp/PopUp";
 import Contacts from "../../components/content_blocks/Contacts/Contacts";
 import AboutService from "../../components/content_blocks/AboutService/AboutService";
 
@@ -94,22 +91,9 @@ const ServicePage = ({ service__data, mainBlock__data, price1, price2 }) => {
       component: <Contacts />,
     },
   ];
-  // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  // useEffect(() => {
-  //   const handleWindowResize = () => {
-  //     setWindowWidth(window.innerWidth);
-  //   };
-  //   window.addEventListener("resize", handleWindowResize);
-
-  //   return () => {
-  //     window.removeEventListener("resize", handleWindowResize);
-  //   };
-  // });
 
   return (
     <>
-      <HeaderUI />
       <div className="content">
         <MainBlock {...mainBlock__data} />
         <div className="contentWrapper">
@@ -133,8 +117,6 @@ const ServicePage = ({ service__data, mainBlock__data, price1, price2 }) => {
           </ContentWrapper>
         </div>
       </div>
-      <PopUp />
-      <Footer />
     </>
   );
 };

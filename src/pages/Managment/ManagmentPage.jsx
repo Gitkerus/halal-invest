@@ -2,14 +2,11 @@ import React from "react";
 
 import "./ManagmentPage.scss";
 
-import HeaderUI from "../../components/ui/HeaderUI/HeaderUI";
 import MainBlock from "../../components/wrappers/MainBlock/MainBlock";
 import Vacations from "../../components/content_blocks/Vacations/Vacations";
 import OurTeam from "../../components/content_blocks/OurTeam/OurTeam";
 import Contacts from "../../components/content_blocks/Contacts/Contacts";
-import Footer from "../../components/ui/Footer/Footer";
 import NavSlider from "../../components/ui/NavSlider/NavSlider";
-import PopUp from "../../components/modal/PopUp/PopUp";
 
 import ContentBlockWraper from "../../components/wrappers/ContentBlockWrapper/ContentBlockWrap";
 import ContentWrapper from "../../components/wrappers/ConentWrapper/ContentWrapper";
@@ -49,7 +46,6 @@ const mainBlock__data = {
 const ManagmentPage = () => {
   return (
     <>
-      <HeaderUI />
       <div className="content">
         <MainBlock {...mainBlock__data} />
         <div className="contentWrapper">
@@ -73,8 +69,6 @@ const ManagmentPage = () => {
           </ContentWrapper>
         </div>
       </div>
-      <PopUp />
-      <Footer />
     </>
   );
 };
