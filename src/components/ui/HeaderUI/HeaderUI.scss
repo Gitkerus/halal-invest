@@ -115,9 +115,9 @@
         &__img {
             height: 38px;
         }
-        &__text {
-            display: none;
-        }
+        // &__text {
+        //     display: none;
+        // }
     }
     &__language {
         background: transparent;
@@ -200,11 +200,11 @@
             height: 40px;
             min-height: auto;
         }
-        &__callBtn {
-            &__text {
-                display: block;
-            }
-        }
+        // &__callBtn {
+        //     &__text {
+        //         display: block;
+        //     }
+        // }
         &__language {
             &__choice {
                 display: block;
@@ -213,7 +213,7 @@
     }
 }
 
-@media (min-width: 1520px) {
+@media (min-width: 1220px) {
     .header {
         &Burger {
             &Btn {
@@ -221,9 +221,6 @@
             }
         }
     }
-}
-
-@media (min-width: 1056px) {
 }
 
 @media (min-width: 1920px) {

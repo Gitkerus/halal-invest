@@ -8,11 +8,10 @@
     }
     &__block {
         position: relative;
-        height: 227px;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        gap: 20px;
         border: 1px solid #c6c6c6;
         padding: 30px 13px;
         margin-top: -1px;
@@ -49,7 +48,7 @@
     .reviews {
         &BottomWrapper {
             width: calc((100% / 3) - 1px);
-            padding-left: 10px;
+            padding: 10px;
             margin: 0;
             display: flex;
             flex-direction: column;
@@ -61,7 +60,6 @@
             flex-wrap: wrap;
         }
         &__block {
-            height: 218px;
             width: calc(100% / 3);
         }
         &__button {

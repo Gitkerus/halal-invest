@@ -28,10 +28,12 @@ const Reports = () => {
           </div>
         </div> */}
         <div className="reportsBotWrapper">
-          <img className="" src={graphs} alt="graphs" />
+          <img className="reports__graphs" src={graphs} alt="graphs" />
           <div className="reportsButtonWrapper">
             Еще больше Отчетов
-            <Button className="reports__button">Смотреть Отчеты</Button>
+            <a href="/reports" className="reportsLink">
+              <Button className="reports__button">Смотреть Отчеты</Button>
+            </a>
           </div>
         </div>
       </div>

@@ -37,6 +37,11 @@
     &__img {
         width: 100%;
     }
+    &Link {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
     &ImgWrapper {
         overflow: auto;
     }
@@ -67,8 +72,8 @@
             width: 100%;
             object-fit: cover;
         }
-        &__graphs > img {
-            width: 100%;
+        &__graphs {
+            width: calc(100% - 260px);
         }
         &__subTitle {
             font-size: 30px;

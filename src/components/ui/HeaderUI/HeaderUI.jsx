@@ -86,11 +86,6 @@ const menuItems = [
         link: "/license",
       },
       {
-        id: "menuItem_1_4",
-        text: "Часто задаваемые вопросы",
-        link: "/faq",
-      },
-      {
         id: "menuItem_1_5",
         text: "Контакты",
         link: "/contacts",
@@ -125,7 +120,7 @@ const menuItems = [
   },
   {
     id: "menuLink_6",
-    link: "Часто задаваемые вопросы",
+    link: "ЧаВо",
     path: "/faq",
   },
   // {
@@ -261,7 +256,6 @@ const HeaderUI = () => {
               alt="phone_call"
               className="header__callBtn__img"
             />
-            <span className="header__callBtn__text">8 (996) 904-47-76</span>
           </a>
           <Button className="header__calcBtn">Личный кабинет</Button>
         </HeaderGlobalBar>
